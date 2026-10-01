@@ -1,0 +1,68 @@
+{
+  "title": "Payroll",
+  "subtitle": "Upload a monthly payroll workbook and generate a Persian payslip for every employee.",
+  "upload": {
+    "title": "Payroll workbook",
+    "hint": "Upload the all-employees payroll spreadsheet for the month.",
+    "choose": "Choose file",
+    "change": "Replace file",
+    "dropHint": "Excel workbook (.xlsx or .xls)",
+    "uploading": "Uploading…",
+    "uploaded": "File uploaded",
+    "employerLabel": "Workplace",
+    "employerPlaceholder": "e.g. acme Holding",
+    "employerHint": "Optional. Overrides the workplace detected in the file.",
+    "monthLabel": "Month",
+    "monthPlaceholder": "e.g. Khordad 1404",
+    "monthHint": "Optional. Overrides the month detected in the file.",
+    "error": "Couldn't upload the file. Please try again."
+  },
+  "preview": {
+    "title": "Parsed employees",
+    "analyzing": "Reading the workbook…",
+    "detected": "Detected {{month}} · {{employer}}",
+    "month": "Month",
+    "employer": "Workplace",
+    "count_one": "{{count}} employee",
+    "count_other": "{{count}} employees",
+    "empty": "No employees were found in this workbook.",
+    "columns": {
+      "name": "Employee",
+      "code": "Code",
+      "net": "Net pay",
+      "earnings": "Total earnings",
+      "deductions": "Total deductions"
+    },
+    "columnsError": {
+      "title": "Required columns are missing",
+      "body": "This workbook doesn't have the columns we expect for a payroll sheet. Check the file and upload it again."
+    },
+    "warningsTitle": "Warnings",
+    "error": "Couldn't read this workbook. Please check the file and try again."
+  },
+  "generate": {
+    "button": "Generate payslips",
+    "running": "Generating…",
+    "phase": {
+      "parsing": "Reading the workbook",
+      "rendering": "Rendering payslips",
+      "zipping": "Packaging the archive"
+    },
+    "progressOf": "{{done}} of {{total}}",
+    "preparing": "Preparing…",
+    "error": "Generation failed. Please try again."
+  },
+  "result": {
+    "title": "Your payslips are ready",
+    "body": "A ZIP archive with one payslip (PDF) per employee.",
+    "regenerate": "Generate again"
+  },
+  "download": {
+    "label": "Download",
+    "aria": "Download {{name}}"
+  },
+  "errors": {
+    "noFile": "Upload a payroll workbook first.",
+    "generic": "Something went wrong. Please try again."
+  }
+}

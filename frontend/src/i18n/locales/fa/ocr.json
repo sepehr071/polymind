@@ -1,0 +1,49 @@
+{
+  "title": "متن‌خوان تصویر (OCR)",
+  "subtitle": "استخراج متن یا فیلدها از تصویر و PDF",
+  "drop": {
+    "title": "تصویر یا PDF را اینجا رها کنید",
+    "hint": "حداکثر {{count}} فایل · PNG, JPG, WEBP, GIF, PDF",
+    "uploading": "در حال بارگذاری…",
+    "remove": "حذف فایل"
+  },
+  "prompt": {
+    "label": "چه چیزی استخراج شود؟",
+    "placeholder": "مثلاً شماره فاکتور، مبلغ کل و اقلام — یا خالی بگذارید برای متن کامل",
+    "hint": "پرامپت خالی = رونویسی کامل. با همان فایل‌ها می‌توانید دوباره با پرامپت جدید اجرا کنید."
+  },
+  "actions": {
+    "extract": "استخراج",
+    "extracting": "استخراج {{done}}/{{total}}…",
+    "working": "در حال کار…",
+    "cancel": "لغو",
+    "clearResults": "پاک‌کردن نتایج"
+  },
+  "result": {
+    "section": "نتایج",
+    "waiting": "در انتظار…",
+    "failed": "ناموفق",
+    "copy": "کپی",
+    "download": "دانلود مارک‌داون",
+    "copied": "کپی شد"
+  },
+  "errors": {
+    "generic": "مشکلی پیش آمد",
+    "maxFiles": "حداکثر {{count}} فایل",
+    "badType": "نوع پشتیبانی‌نشده: {{name}}",
+    "uploadFailed": "بارگذاری ناموفق: {{name}}",
+    "extractFailed": "استخراج ناموفق",
+    "loadFailed": "این استخراج بارگذاری نشد"
+  },
+  "history": {
+    "title": "تاریخچه",
+    "new": "استخراج جدید",
+    "empty": "هنوز استخراجی نیست",
+    "untitled": "OCR",
+    "fileCount_one": "{{count}} فایل",
+    "fileCount_other": "{{count}} فایل",
+    "deleteTitle": "حذف استخراج",
+    "deleteConfirm": "این استخراج از تاریخچه حذف شود؟",
+    "deleteFromHistory": "حذف از تاریخچه"
+  }
+}

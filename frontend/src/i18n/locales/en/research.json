@@ -1,0 +1,89 @@
+{
+  "title": "Deep Research",
+  "subtitle": "Multi-source research reports with citations",
+  "pitch": "Ask a specific question. We search, read, and return a manager-ready report with sources.",
+  "premiumWarn": "Premium runs the same deep-research engine with a longer report budget. Prefer Deep for most work.",
+  "mode": {
+    "quick": "Quick",
+    "deep": "Deep",
+    "premium": "Premium",
+    "quickDesc": "Fast brief with light web search — about 1–2 minutes",
+    "deepDesc": "Multi-step deep research (Sonar) — several minutes",
+    "premiumDesc": "Same deep-research engine, longer fuller report"
+  },
+  "lang": { "fa": "Persian", "en": "English" },
+  "query": "Research question",
+  "queryPlaceholder": "What should we research? Be specific…",
+  "focus": "Focus / constraints",
+  "focusPlaceholder": "e.g. last 12 months, Iran market, compare vendors…",
+  "moreOptions": "More options",
+  "attach": "Attach files",
+  "attachHint": "Optional PDFs or images for Deep and Premium",
+  "run": "Start research",
+  "running": "Researching…",
+  "cancel": "Stop research",
+  "cancelHint": "Stops waiting for the result. The model call may finish billing shortly after.",
+  "retry": "Retry",
+  "dismissError": "Dismiss",
+  "newResearch": "New research",
+  "report": "Report",
+  "sources": "Sources",
+  "sourcesEmpty": "No structured sources returned for this run.",
+  "sourcesUntitled": "Source",
+  "sourcesCount_one": "{{count}} source",
+  "sourcesCount_other": "{{count}} sources",
+  "copied": "Copied",
+  "langLabel": "Language",
+  "actions": {
+    "copy": "Copy",
+    "download": "Download"
+  },
+  "tabs": {
+    "report": "Report",
+    "sources": "Sources"
+  },
+  "starters": {
+    "label": "Try an example",
+    "market": {
+      "label": "Market",
+      "query": "What is the current size and growth outlook for the Iran e-commerce market for mid-size retailers?",
+      "focus": "Last 24 months; include major players and risks for Iranian SMEs"
+    },
+    "competitors": {
+      "label": "Competitors",
+      "query": "Compare the top Iranian digital banking / neobank offerings for retail customers",
+      "focus": "Features, fees, strengths/weaknesses; cite public sources"
+    },
+    "regulation": {
+      "label": "Regulation",
+      "query": "What regulations and compliance requirements affect personal data processing for SaaS companies operating in Iran?",
+      "focus": "Manager-level summary; not legal advice; note uncertainty"
+    },
+    "vendor": {
+      "label": "Vendor",
+      "query": "Evaluate options for enterprise laptop procurement for a 200-person company in Iran",
+      "focus": "Price bands, support, import/availability constraints; decision criteria"
+    }
+  },
+  "progress": {
+    "title": "Research in progress",
+    "working": "Reviewing sources and drafting the report…",
+    "elapsed": "Time elapsed",
+    "expectQuick": "Quick research usually takes about 10–15 minutes.",
+    "expectDeep": "Deep research often takes several minutes while sources are gathered and synthesized.",
+    "expectPremium": "Premium can take longer — keep this page open until it finishes.",
+    "stay": "Keep this page open until research finishes. Closing or leaving may stop the process.",
+    "stayBackground": "You can leave this page; we will notify you when the report is ready."
+  },
+  "meta": {
+    "mode": "Mode",
+    "model": "Model",
+    "elapsed": "Duration"
+  },
+  "errors": {
+    "generic": "Something went wrong",
+    "uploadFailed": "Upload failed for {{name}}",
+    "network": "Connection lost while researching. Check network and try again.",
+    "timeout": "Research timed out. Try Quick mode or a shorter question."
+  }
+}

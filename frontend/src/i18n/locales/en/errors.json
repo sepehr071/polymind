@@ -1,0 +1,12 @@
+{
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you're looking for doesn't exist or may have been moved.",
+    "goHome": "Back to chat"
+  },
+  "featureDisabled": {
+    "title": "This feature isn't enabled",
+    "message": "This feature isn't enabled for your company yet. Contact your administrator to request access.",
+    "goHome": "Back to chat"
+  }
+}

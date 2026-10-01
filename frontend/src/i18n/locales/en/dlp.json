@@ -1,0 +1,331 @@
+{
+  "title": "Content Safety",
+  "save": "Save changes",
+  "saving": "Saving...",
+  "saveSuccess": "Policy saved",
+  "discard": "Discard",
+  "unsaved": "You have unsaved changes",
+  "readOnlyNotice": "Only company owners can change Content Safety settings. You can still review the current policy and recent activity.",
+  "enabledLabel": "Protection is on",
+  "disabledLabel": "Protection is off",
+
+  "hero": {
+    "title": "Content Safety",
+    "summaryOn": "{{sensitivity}} · {{mode}} · {{checks}} checks on{{ai}}",
+    "summaryOff": "Messages and files are not scanned",
+    "aiOn": " · AI checker on",
+    "aiOff": "",
+    "offTitle": "Protection is turned off",
+    "offBody": "Secrets, IDs, and personal details can slip into chat and files. Turn protection on to catch them before they leave.",
+    "turnOn": "Turn protection on",
+    "privacyNote": "Your team sees a short note when something is flagged. Raw message text is never stored — only a fingerprint and a masked snippet.",
+    "learnMore": "How it works for your team"
+  },
+
+  "choices": {
+    "carefulTitle": "How careful should we be?",
+    "carefulHint": "Stricter catches more edge cases; looser means fewer interruptions.",
+    "outcomeTitle": "When something sensitive is found",
+    "outcomeHint": "Pick what happens for people on your team."
+  },
+
+  "customize": {
+    "title": "Customize checks",
+    "hint": "Rules, recent activity, company bans, and the AI checker"
+  },
+  "sections": {
+    "policy": "Protection",
+    "policyHint": "Master switch and how carefully we scan",
+    "stats": "Last 30 days",
+    "statsHint": "How often Content Safety stepped in",
+    "statsEmpty": "No hits yet — quiet is often a good sign.",
+    "builtinRules": "What we check for",
+    "builtinRulesHint": "Turn off checks your team does not need. Everything starts on.",
+    "builtinSearch": "Search checks…",
+    "customPatterns": "Company bans",
+    "customPatternsHint": "Block internal codenames, project names, or phrases unique to your company",
+    "llmClassifier": "AI checker",
+    "llmClassifierHint": "Optional smart pass for content fixed rules might miss",
+    "recentEvents": "Recent activity",
+    "recentEventsHint": "Latest Content Safety events in this company",
+    "preferences": "Preferences"
+  },
+
+  "groups": {
+    "secrets": "Passwords & keys",
+    "financial": "Financial details",
+    "identity": "ID numbers",
+    "pii": "Personal contact info",
+    "network": "Network details",
+    "other": "Other",
+    "countOn": "{{on}} of {{total}} on",
+    "toggleAll": "Toggle all in this group"
+  },
+
+  "actionChip": {
+    "block": "Blocks",
+    "require_confirm": "Asks to confirm",
+    "warn": "Warns"
+  },
+
+  "ruleToggle": {
+    "on": "On",
+    "off": "Off"
+  },
+
+  "advanced": {
+    "toggle": "More options",
+    "hint": "Owner notifications and technical notes",
+    "show": "Show more options",
+    "hide": "Hide more options"
+  },
+
+  "sensitivity": {
+    "label": "How careful",
+    "labelHint": "How eagerly the scanner flags borderline matches.",
+    "lenient": "Relaxed",
+    "balanced": "Balanced",
+    "strict": "Strict",
+    "lenientDesc": "Only clear, high-risk matches. Fewer interruptions.",
+    "balancedDesc": "Recommended. Catches most secrets and personal data.",
+    "strictDesc": "Flags borderline cases too. More prompts for your team."
+  },
+
+  "stats": {
+    "total": "Total events",
+    "blocked": "Blocked",
+    "confirm": "Asked to confirm",
+    "warn": "Warned"
+  },
+
+  "catalog": {
+    "name": "Rule",
+    "category": "Category",
+    "severity": "Severity",
+    "action": "Default action"
+  },
+
+  "severity": {
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+
+  "action": {
+    "block": "Block",
+    "require_confirm": "Ask to confirm",
+    "warn": "Warn only",
+    "redact": "Scrub & send"
+  },
+
+  "mode": {
+    "label": "When something is found",
+    "enforce": "Stop risky sends",
+    "redact": "Scrub secrets & send",
+    "enforceDesc": "Blocks risky sends. Low-risk matches only show a warning.",
+    "redactDesc": "Replace sensitive bits with placeholders (e.g. [EMAIL_1]) and send the rest.",
+    "spanDef": "Only the sensitive fragment is replaced — the rest of the message stays as written."
+  },
+
+  "settings": {
+    "notifyOwners": "Notify company owners",
+    "notifyOwnersDesc": "Owners can review a summary of Content Safety events. Individual message text is never included."
+  },
+
+  "transparency": {
+    "title": "What your team sees",
+    "body1": "People get a calm note: a quick toast for warnings, and a dialog that stops the send for blocks.",
+    "body2": "We never store the raw message. Only a one-way fingerprint and a masked excerpt are recorded when a rule matches.",
+    "body3": "Platform admins can review these recorded events with the team and member attached."
+  },
+
+  "customPatterns": {
+    "empty": "No company bans yet. Add a project codename or internal phrase to catch it in chat and files.",
+    "add": "Add ban",
+    "remove": "Remove ban",
+    "name": "Label (optional)",
+    "namePlaceholder": "e.g. Project Falcon",
+    "text": "Word or phrase to ban",
+    "textPlaceholder": "e.g. Project Falcon",
+    "advancedRegex": "Use advanced pattern instead",
+    "usePlainText": "Use plain text instead",
+    "regex": "Advanced pattern",
+    "regexPlaceholder": "e.g. PROJ-[0-9]{4}",
+    "severity": "How serious",
+    "action": "What to do",
+    "showOptions": "Severity & action",
+    "hideOptions": "Hide options"
+  },
+
+  "llm": {
+    "title": "AI checker",
+    "intro": "An optional smart pass that catches sensitive business content fixed rules might miss — deal terms, salary packages, internal codenames in free text.",
+    "enabledLabel": "Enable AI checker",
+    "guidancePrompt": "What should count as sensitive here?",
+    "guidancePromptHint": "Describe your company policy in plain language. Use Enhance to tighten it into clear flag/allow rules.",
+    "guidancePromptPlaceholder": "e.g. Flag named customer contracts with dollar figures; allow public product docs…",
+    "enhance": {
+      "button": "Enhance",
+      "running": "Enhancing…",
+      "success": "Guidance improved",
+      "fail": "Could not enhance guidance",
+      "empty": "Write a short draft first, then enhance",
+      "revert": "Revert",
+      "reverted": "Restored previous draft"
+    },
+    "thresholdsLabel": "What to do when the AI flags content",
+    "thresholdsHint": "Pick the response for each risk level.",
+    "thresholdConfidential": "Confidential",
+    "thresholdConfidentialDef": "Sensitive but lower risk — e.g. internal-only notes.",
+    "thresholdRestricted": "Restricted",
+    "thresholdRestrictedDef": "Highest risk — e.g. credentials or regulated personal data.",
+    "test": {
+      "title": "Try a sample",
+      "placeholder": "Paste a sample message to see what would be flagged…",
+      "run": "Run test",
+      "running": "Checking…",
+      "noViolations": "Nothing sensitive detected",
+      "highestAction": "Highest action",
+      "smartVerdict": "AI verdict",
+      "needsEnabled": "Turn on the AI checker to run a test."
+    }
+  },
+
+  "violationModal": {
+    "titleBlock": "We can't send this one",
+    "titleConfirm": "One thing worth a second look",
+    "titleWarn": "Just so you know",
+    "titleRedact": "We can tidy this before sending",
+    "intro": "We spotted something that looks like sensitive info you might not want to share. Take a quick look before sending.",
+    "modify": "Modify",
+    "sendAnyway": "Send as is",
+    "redactAndSend": "Redact & send",
+    "redactedPreview": "Redacted preview",
+    "redactHint": "Sensitive spans will be replaced with placeholders before sending.",
+    "blockHint": "This message won't be sent until you adjust the highlighted part. You can tidy it and try again.",
+    "showSnippet": "Show what we found",
+    "hideSnippet": "Hide",
+    "findingCount_one": "{{count}} finding",
+    "findingCount_other": "{{count}} findings",
+    "groupedHint_one": "{{count}} similar place in this message or file — shown as one item.",
+    "groupedHint_other": "{{count}} similar places in this message or file — shown as one item.",
+    "moreHidden_one": "+{{count}} more similar (hidden)",
+    "moreHidden_other": "+{{count}} more similar (hidden)",
+    "summaryLine": "{{findings}} findings across {{types}} types — grouped below so you can scan quickly."
+  },
+
+  "explainer": {
+    "trigger": "Why am I seeing this?",
+    "line1": "We check messages for things like passwords, keys, or personal details that are easy to paste by accident.",
+    "line2": "Your message text is never stored. We only keep a one-way fingerprint and a masked snippet when something matches.",
+    "line3": "This check is set up by your company to help keep shared data safe."
+  },
+
+  "toast": {
+    "warn": "Quick heads up, double-check this before it goes out."
+  },
+
+  "rules": {
+    "aws_access_key": {
+      "name": "AWS access key",
+      "reason": "Looks like an AWS access-key ID. Sharing it can grant full account access."
+    },
+    "aws_secret_key": {
+      "name": "AWS secret key",
+      "reason": "Looks like an AWS secret key. Treat it like a password and rotate immediately."
+    },
+    "anthropic_api_key": {
+      "name": "Anthropic API key",
+      "reason": "Looks like an Anthropic API key. Sharing it grants billed access to your account."
+    },
+    "openai_api_key": {
+      "name": "OpenAI API key",
+      "reason": "Looks like an OpenAI API key. Sharing it grants billed access to your account."
+    },
+    "github_pat": {
+      "name": "GitHub PAT",
+      "reason": "Looks like a GitHub personal access token. Revoke it if it leaks outside trusted channels."
+    },
+    "google_api_key": {
+      "name": "Google API key",
+      "reason": "Looks like a Google API key. Anyone with this key can call the API on your project."
+    },
+    "slack_token": {
+      "name": "Slack token",
+      "reason": "Looks like a Slack token. Sharing it can give bot or user access to your workspace."
+    },
+    "stripe_secret": {
+      "name": "Stripe secret",
+      "reason": "Looks like a Stripe secret key. Sharing it exposes payment-processing privileges."
+    },
+    "private_key_pem": {
+      "name": "Private key (PEM)",
+      "reason": "Looks like a private cryptographic key. Never share private keys in chat."
+    },
+    "jwt_token": {
+      "name": "JWT",
+      "reason": "Looks like a JSON Web Token. It may grant authenticated access until it expires."
+    },
+    "credit_card": {
+      "name": "Credit card",
+      "reason": "Looks like a credit-card number. Avoid sending payment data through chat."
+    },
+    "iban": {
+      "name": "IBAN",
+      "reason": "Looks like a bank IBAN. Share account numbers only over trusted channels."
+    },
+    "generic_api_key": {
+      "name": "API key or password",
+      "reason": "Looks like an API key, token, or password written as a key=value pair. Don't paste credentials into chat."
+    },
+    "national_id_iran": {
+      "name": "Iran national ID",
+      "reason": "Looks like an Iranian national ID. This is highly sensitive personal data."
+    },
+    "email": {
+      "name": "Email address",
+      "reason": "Contains an email address. Confirm the recipient is allowed to receive it."
+    },
+    "phone_intl": {
+      "name": "Phone number",
+      "reason": "Contains a phone number. Confirm the recipient is allowed to receive it."
+    },
+    "ipv4_private": {
+      "name": "Private IPv4",
+      "reason": "Contains a private IPv4 address that may reveal internal network details."
+    },
+    "high_entropy_token": {
+      "name": "High-entropy token",
+      "reason": "Looks like a random token or secret. Verify it is not a credential before sending."
+    },
+    "internal_hostname": {
+      "name": "Internal hostname",
+      "reason": "Matches an internal hostname. Avoid leaking infrastructure details externally."
+    },
+    "ai_smart_scan": {
+      "name": "Smart scan",
+      "reason": "Your message looks like it may contain confidential or restricted information."
+    }
+  },
+
+  "events": {
+    "empty": "No events yet. When Content Safety steps in, you will see it here.",
+    "time": "Time",
+    "user": "User",
+    "severity": "Severity",
+    "action": "Action",
+    "source": "Source",
+    "rule": "Rule",
+    "viewAll": "View full activity",
+    "viewAllHint": "Open the Activity tab for the full event log."
+  },
+
+  "errors": {
+    "loadFailed": "Failed to load content-safety settings",
+    "saveFailed": "Failed to save policy",
+    "invalidRegex": "Invalid advanced pattern",
+    "fixRegex": "Fix invalid patterns before saving",
+    "incompletePattern": "Give every ban a word/phrase (or advanced pattern)"
+  }
+}

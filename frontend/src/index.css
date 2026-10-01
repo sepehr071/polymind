@@ -1,0 +1,646 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Type — Vazirmatn (loaded via @fontsource in main.jsx) ----------
+   Single UI stack for FA+EN. No Google Fonts CDN (air-gap). Mono stays separate. */
+
+/* Light Theme (Default - applied when no dark class) — POLYMIND royal blue + slate */
+:root {
+  /* Backgrounds — legacy System-A names ALIASED onto the Refined (Phase 2)
+     --bg-* scale below so both vocabularies render identically. Role mapping:
+     page → bg-0, surface/card → bg-2, hover → bg-3. Keep editing the scale,
+     not these aliases. */
+  --background: var(--bg-0);           /* page */
+  --background-secondary: var(--bg-2); /* surface (cards, sidebar) */
+  --background-tertiary: var(--bg-3);  /* hover / btn-secondary */
+  --background-elevated: var(--bg-2);  /* elevated cards (light: = surface) */
+
+  /* Text — aliased onto --fg-*. tertiary → fg-3 (NOT fg-4): meta/timestamp
+     text must hold WCAG AA 4.5:1 (old slate-400 value was 2.8:1 on white). */
+  --foreground: var(--fg-0);
+  --foreground-secondary: var(--fg-2);
+  --foreground-tertiary: var(--fg-3);
+
+  /* Borders — aliased onto --line-*; border-light has no scale equivalent */
+  --border: var(--line);
+  --border-light: 210 40% 96%;        /* grey.100 #F1F5F9 */
+  --border-strong: var(--line-2);
+
+  /* Accent colors (POLYMIND royal blue scale to match primary) */
+  --accent: 225 75% 47%;              /* #1E47D1 */
+  --accent-hover: 226 76% 39%;        /* #183AB0 */
+  --accent-muted: 225 79% 91%;        /* #D6E0FA-ish */
+  --accent-foreground: 0 0% 100%;
+
+  /* Status colors (RGB for opacity support) — darker so legible on white */
+  --success: 18 183 106;              /* #12B76A */
+  --warning: 247 144 9;               /* #F79009 */
+  --error: 240 68 56;                 /* #F04438 */
+
+  /* Shadows — slate-blue tinted */
+  --shadow-color: rgba(15, 23, 42, 0.08);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05), 0 1px 1px rgba(15, 23, 42, 0.03);
+  --shadow-md: 0 2px 4px rgba(15, 23, 42, 0.06), 0 4px 8px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 4px 8px rgba(15, 23, 42, 0.06), 0 12px 24px rgba(15, 23, 42, 0.10);
+  --shadow-glow-accent: 0 0 0 3px hsl(var(--accent) / 0.18);
+
+  /* shadcn/ui required variables — surfaces/text aliased onto the scale;
+     primary mirrors hoosh sky-500 */
+  --card: var(--bg-2);
+  --card-foreground: var(--fg-0);
+  --popover: var(--bg-2);
+  --popover-foreground: var(--fg-0);
+  --primary: var(--accent);           /* single source of truth → --accent */
+  --primary-foreground: 0 0% 100%;
+  --primary-dark: 226 76% 39%;        /* #183AB0 (button hover) */
+  --secondary: var(--bg-3);
+  --secondary-foreground: var(--fg-0);
+  --muted: var(--bg-3);
+  --muted-foreground: var(--fg-2);
+  --destructive: 4 86% 58%;           /* #F04438 */
+  --destructive-foreground: 0 0% 100%;
+  --input: var(--line);
+  --ring: 225 75% 47%;
+  --radius: 0.5rem; /* 8px — Minimal control radius; cards use 16 via RADII.surface */
+
+  /* ERP slate greys — mapped to bg/fg/line CSS vars */
+  --bg-0: 223 100% 99%;    /* #F8FAFF page */
+  --bg-1: 210 40% 98%;     /* #F8FAFC grey.50 */
+  --bg-2: 0 0% 100%;       /* #FFFFFF paper */
+  --bg-3: 220 44% 97%;     /* #F2F5FA neutral */
+  --bg-4: 216 22% 87%;     /* #D5DCE6 grey.300 */
+  --line: 218 35% 94%;     /* #E8EDF5 divider */
+  --line-2: 216 22% 87%;
+  --line-3: 215 19% 35%;   /* #475569 grey.600 */
+  --fg-0: 220 39% 11%;     /* #111827 */
+  --fg-1: 217 33% 17%;     /* #1E293B */
+  --fg-2: 221 13% 41%;     /* #5B6475 */
+  --fg-3: 218 13% 60%;     /* #8B95A7 */
+  --fg-4: 214 20% 65%;     /* #94A3B8 */
+  --accent-soft: 225 75% 47% / 0.10;
+  --accent-line: 225 75% 47% / 0.28;
+  --ok: 152 82% 39%;       /* #12B76A */
+  --warn: 36 96% 50%;      /* #F79009 */
+  --err: 4 86% 58%;        /* #F04438 */
+  --violet: 247 91% 67%;   /* #6D5EF7 */
+  --pink: 327 76% 50%;
+  --teal: 173 80% 35%;
+
+  /* Role pills */
+  --role-owner-bg: 38 92% 90%;
+  --role-owner-fg: 32 81% 29%;
+  --role-owner-line: 43 96% 65%;
+  --role-editor-bg: 226 75% 95%;
+  --role-editor-fg: 226 76% 31%;
+  --role-editor-line: 225 80% 80%;
+  --role-viewer-bg: 220 14% 93%;
+  --role-viewer-fg: 215 19% 27%;
+  --role-viewer-line: 220 13% 80%;
+
+  /* Speaker palette (meetings minutes/transcript chips) — HSL triplets */
+  --speaker-1: 225 75% 47%;
+  --speaker-2: 173 58% 39%;
+  --speaker-3: 142 71% 38%;
+  --speaker-4: 43 96% 56%;
+  --speaker-5: 0 84% 60%;
+  --speaker-6: 246 90% 67%;
+
+  /* Analytics chart series ramp — HSL triplets, consumed via hsl(var(--chart-N)).
+     Ordered for categorical contrast: sky → violet → teal → amber → pink → green.
+     Darkened in :root so series stay legible on the light (white) surfaces. */
+  --chart-1: 225 75% 47%;   /* royal (mirrors --accent) */
+  --chart-2: 246 90% 67%;   /* violet */
+  --chart-3: 173 80% 35%;   /* teal */
+  --chart-4: 36 96% 50%;    /* amber */
+  --chart-5: 327 76% 50%;   /* pink */
+  --chart-6: 152 82% 39%;   /* green */
+
+  /* Legacy glass vars → solid Minimal surfaces (no blur).
+     Kept so old rgb(var(--glass-bg)/…) call sites stay readable. */
+  --glass-bg: 255 255 255;
+  --glass-bg-opacity: 1;
+  --glass-bg-strong-opacity: 1;
+  --glass-border: 100 116 139;
+  --glass-border-opacity: 0.16;
+  --glass-highlight: 255 255 255;
+  --glass-blur: 0px;
+  --glass-saturate: 100%;
+  /* Minimal customShadows.card — ERP grey 500 */
+  --glass-shadow: 0 0 2px 0 rgba(100, 116, 139, 0.2), 0 12px 24px -4px rgba(100, 116, 139, 0.12);
+  --card-shadow: var(--glass-shadow);
+  --dropdown-shadow: 0 0 2px 0 rgba(100, 116, 139, 0.24), -20px 20px 40px -4px rgba(100, 116, 139, 0.24);
+}
+
+/* Dark Theme */
+.dark {
+  /* Backgrounds — aliased onto the Refined --bg-* zinc ramp (see :root note).
+     elevated → bg-4 here (dark has real elevation steps; light flattens to
+     the surface). */
+  --background: var(--bg-0);
+  --background-secondary: var(--bg-2);
+  --background-tertiary: var(--bg-3);
+  --background-elevated: var(--bg-4);
+
+  /* Text — aliased onto --fg-* (tertiary → fg-3 for AA on small meta text) */
+  --foreground: var(--fg-0);
+  --foreground-secondary: var(--fg-2);
+  --foreground-tertiary: var(--fg-3);
+
+  /* Borders */
+  --border: var(--line);
+  --border-light: 215 25% 27%;
+
+  /* Accent colors — royal blue lifted for dark contrast */
+  --accent: 220 100% 75%;             /* #80A7FF */
+  --accent-hover: 220 100% 80%;       /* #96B7FF */
+  --accent-muted: 226 50% 30%;
+  --accent-foreground: 222 47% 11%;   /* #0F172A — ERP dark contrastText */
+
+  /* Status colors (RGB for opacity support) — same light ramps as :root */
+  --success: 18 183 106;              /* #12B76A */
+  --warning: 247 144 9;               /* #F79009 */
+  --error: 240 68 56;                 /* #F04438 */
+
+  /* Shadows */
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.16);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.20), 0 4px 8px rgba(0, 0, 0, 0.20);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.24), 0 12px 24px rgba(0, 0, 0, 0.24);
+  --shadow-glow-accent: 0 0 0 3px hsl(var(--accent) / 0.12);
+
+  /* shadcn/ui required variables — surfaces/text aliased onto the scale;
+     primary sky lifted for dark */
+  --card: var(--bg-2);
+  --card-foreground: var(--fg-0);
+  --popover: var(--bg-2);
+  --popover-foreground: var(--fg-0);
+  --primary: var(--accent);           /* single source of truth → --accent */
+  --primary-foreground: 222 47% 11%;  /* #0F172A — contrast on light-blue primary */
+  --primary-dark: 218 93% 70%;        /* #6A97FA (button hover) */
+  --border-strong: var(--line-2);
+  --secondary: var(--bg-3);
+  --secondary-foreground: var(--fg-0);
+  --muted: var(--bg-3);
+  --muted-foreground: var(--fg-2);
+  --destructive: 4 86% 58%;           /* #F04438 — same light semantic */
+  --destructive-foreground: 0 0% 100%;
+  --input: var(--line);
+  --ring: 220 100% 75%;
+
+  /* ERP dark surfaces */
+  --bg-0: 222 47% 11%;      /* #0F172A */
+  --bg-1: 217 33% 17%;      /* #1E293B */
+  --bg-2: 218 38% 15%;      /* #182235 paper */
+  --bg-3: 220 35% 19%;      /* #202C42 */
+  --bg-4: 217 29% 22%;      /* #283548 */
+  --line: 217 29% 22%;      /* #283548 */
+  --line-2: 215 25% 27%;    /* #334155 */
+  --line-3: 215 16% 47%;    /* #64748B */
+  --fg-0: 210 40% 98%;      /* #F8FAFC */
+  --fg-1: 210 40% 96%;
+  --fg-2: 214 32% 84%;      /* #CBD5E1 */
+  --fg-3: 214 20% 65%;      /* #94A3B8 */
+  --fg-4: 215 16% 47%;
+  --accent-soft: 220 100% 75% / 0.16;
+  --accent-line: 220 100% 75% / 0.32;
+  --ok: 152 82% 39%;        /* #12B76A */
+  --warn: 36 96% 50%;       /* #F79009 */
+  --err: 4 86% 58%;         /* #F04438 */
+  --violet: 249 100% 84%;   /* #B6ACFF */
+  --pink: 327 86% 70%;      /* #f472b6 */
+  --teal: 173 80% 50%;      /* #2dd4bf */
+
+  /* Role pills (dark) */
+  --role-owner-bg: 38 92% 50% / 0.14;
+  --role-owner-fg: 43 96% 70%;
+  --role-owner-line: 43 96% 50% / 0.45;
+  --role-editor-bg: 220 100% 75% / 0.16;
+  --role-editor-fg: 220 100% 80%;
+  --role-editor-line: 220 100% 75% / 0.45;
+  --role-viewer-bg: 240 6% 18%;
+  --role-viewer-fg: 240 5% 84%;
+  --role-viewer-line: 240 7% 24%;
+
+  /* Speaker palette (dark — lifted for contrast on dark chips) */
+  --speaker-1: 220 100% 75%;
+  --speaker-2: 173 60% 52%;
+  --speaker-3: 142 64% 52%;
+  --speaker-4: 43 92% 62%;
+  --speaker-5: 0 84% 68%;
+  --speaker-6: 249 100% 84%;
+
+  /* Analytics chart series ramp (dark — lifted for contrast on dark surfaces) */
+  --chart-1: 220 100% 75%;  /* royal */
+  --chart-2: 249 100% 84%;  /* violet */
+  --chart-3: 173 80% 50%;   /* teal */
+  --chart-4: 43 96% 56%;    /* amber */
+  --chart-5: 327 86% 70%;   /* pink */
+  --chart-6: 160 64% 51%;   /* green */
+
+  /* Solid dark surfaces (no blur) */
+  --glass-bg: 24 34 53;               /* #182235 paper */
+  --glass-bg-opacity: 1;
+  --glass-bg-strong-opacity: 1;
+  --glass-border: 100 116 139;
+  --glass-border-opacity: 0.16;
+  --glass-highlight: 255 255 255;
+  --glass-blur: 0px;
+  --glass-saturate: 100%;
+  --glass-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24), 0 12px 24px -4px rgba(0, 0, 0, 0.24);
+  --card-shadow: var(--glass-shadow);
+  --dropdown-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24), -20px 20px 40px -4px rgba(0, 0, 0, 0.24);
+}
+
+/* Landing (brand surface) — warm dark luxury scope. Applied ALONGSIDE `.dark`
+   on the landing wrapper so the marketing page deepens the canvas + gains a
+   lamp-warm accent without touching the app's dark theme. Spec:
+   docs/superpowers/specs/2026-06-07-landing-redesign-design.md */
+.landing-dark {
+  --landing-warm: 35 90% 60%;   /* amber lamp-light (decorative, ≠ --warning) */
+  --bg-0: 222 50% 7%;           /* deeper than #0F172A app navy */
+  --bg-1: 222 47% 9%;
+}
+
+/* Film-grain overlay (anti-banding on aurora gradients). Self-contained:
+   drop <div className="landing-noise" aria-hidden="true" /> inside any
+   relative section. */
+.landing-noise {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.018;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* App-shell viewport height (unlayered). 100dvh tracks the *visible* viewport on
+   mobile WebView/Chrome — with the keyboard open or the URL bar collapsing,
+   100vh overflows and pins the composer off-screen. vh first = fallback for
+   engines without dvh (cascade keeps the working-but-imperfect value). */
+.h-app-dvh {
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Home backdrop from the Poe prototype: soft brand wash + dot grid. No blur. */
+.bg-network {
+  background-image:
+    radial-gradient(circle at 15% 20%, hsl(var(--accent) / 0.10), transparent 35%),
+    radial-gradient(circle at 85% 75%, hsl(var(--accent) / 0.08), transparent 35%),
+    radial-gradient(rgb(148 163 184 / 0.28) 1px, transparent 1px);
+  background-size: auto, auto, 26px 26px;
+}
+.min-h-app-dvh {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Safe-area insets (Capacitor Android edge-to-edge + iOS notch). Zero on
+   regular desktop/mobile web — consumed by the MainLayout root + portalled
+   chrome (drawer, fullscreen dialogs) so content never sits under the status
+   bar / gesture nav. Android WebView < 140 reports env(safe-area-inset-*) as
+   0, so Capacitor 8's SystemBars plugin (insetsHandling:"css") injects
+   --safe-area-inset-* vars instead — hence the var(..., env(...)) chain:
+   plugin var when present, real env() elsewhere, 0 fallback. */
+:root {
+  --safe-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+  --safe-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+  --safe-start: var(--safe-area-inset-left, env(safe-area-inset-left, 0px));
+  --safe-end: var(--safe-area-inset-right, env(safe-area-inset-right, 0px));
+}
+
+/* Touch-device paint-layer relief (unlayered → overrides @layer base body rule).
+   `background-attachment: fixed` forces a full repaint on every scroll frame on
+   mobile; the film-grain noise adds a mix-blend-mode layer per section. Both are
+   shed on coarse pointers — imperceptible visually, big scroll-smoothness win. */
+@media (pointer: coarse) {
+  body {
+    background-attachment: scroll;
+  }
+  .landing-noise {
+    display: none;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    /* Ambient color field so Liquid Glass surfaces have something to lens /
+       blur (glass over a flat fill reads as flat). Subtle, fixed, behind all. */
+    background-image:
+      radial-gradient(42rem 42rem at 12% 6%, hsl(var(--accent) / 0.20), transparent 58%),
+      radial-gradient(40rem 40rem at 94% 2%, hsl(var(--violet) / 0.16), transparent 58%),
+      radial-gradient(48rem 48rem at 80% 98%, hsl(var(--teal) / 0.13), transparent 60%),
+      radial-gradient(36rem 36rem at 4% 100%, hsl(var(--pink) / 0.11), transparent 60%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-border-light;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-accent-muted;
+  }
+}
+
+@layer utilities {
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Animation utilities */
+  .animate-in {
+    animation: fadeIn 0.2s ease-out;
+  }
+
+  /* Gradient utilities */
+  .gradient-mask-b {
+    mask-image: linear-gradient(to bottom, black 60%, transparent);
+  }
+
+  .gradient-mask-t {
+    mask-image: linear-gradient(to top, black 60%, transparent);
+  }
+
+  .workflow-surface { font-size: 13.5px; line-height: 1.5; }
+
+  /* Meeting-assistant ported utilities */
+  .scrollbar-none { scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .scroll-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  .scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+  .scroll-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 99px;
+  }
+  .scroll-thin::-webkit-scrollbar-track { background: transparent; }
+  .mask-fade-x {
+    mask-image: linear-gradient(
+      to left,
+      transparent 0,
+      black 24px,
+      black calc(100% - 24px),
+      transparent 100%
+    );
+  }
+  .shadow-card { box-shadow: var(--shadow-sm); }
+  .shadow-card-md { box-shadow: var(--shadow-md); }
+  .shadow-card-lg { box-shadow: var(--shadow-lg); }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 0.45; transform: scale(0.85); }
+    50% { opacity: 1; transform: scale(1); }
+  }
+  .animate-pulse-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
+
+  @keyframes record-ring {
+    0% { box-shadow: 0 0 0 0 rgb(var(--error) / 0.6); }
+    100% { box-shadow: 0 0 0 14px transparent; }
+  }
+  .animate-record-ring { animation: record-ring 1.6s ease-out infinite; }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--background-tertiary)) 0%,
+      hsl(var(--background-secondary)) 50%,
+      hsl(var(--background-tertiary)) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.6s linear infinite;
+  }
+
+  @keyframes indeterminate {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(320%); }
+  }
+  .animate-indeterminate { animation: indeterminate 1.3s ease-in-out infinite; }
+
+  /* Dashboard hub — hero entrance + drifting aurora blobs (reduce-motion
+     freezes these via the global rule below; the hero settles to its visible
+     end-state because opacity/transform resolve to the `to` frame). */
+  @keyframes heroIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: none; }
+  }
+  .animate-hero-in { animation: heroIn 0.85s cubic-bezier(.2,.7,.3,1) both; }
+
+  @keyframes driftA {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50%      { transform: translate(-40px, 34px) scale(1.14); }
+  }
+  @keyframes driftB {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50%      { transform: translate(38px, -28px) scale(1.16); }
+  }
+  @keyframes driftC {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50%      { transform: translate(22px, -32px) scale(1.1); }
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  /* Loaders/spinners convey active progress — keep them running even under
+     reduce-motion (decorative animations stay frozen by the rule above). */
+  .animate-spin,
+  .animate-pulse,
+  .animate-pulse-dot,
+  .animate-shimmer,
+  .animate-indeterminate,
+  .animate-record-ring {
+    animation-duration: revert !important;
+    animation-iteration-count: infinite !important;
+  }
+
+  /* Streaming-cursor blink uses an inline `style` shorthand (no author rule to
+     revert to), so restore its concrete timing rather than `revert`. */
+  [style*="chat-blink"] {
+    animation-duration: 1s !important;
+    animation-iteration-count: infinite !important;
+  }
+}
+
+/* Code block styles */
+pre {
+  @apply rounded-lg bg-background-tertiary p-4 overflow-x-auto;
+}
+
+code {
+  @apply font-mono text-sm;
+}
+
+:not(pre) > code {
+  @apply rounded bg-background-tertiary px-1.5 py-0.5 text-foreground;
+}
+
+/* Markdown content styles */
+.markdown-content {
+  @apply space-y-4;
+}
+
+/* MarkdownRenderer wraps its blocks in one <div>, so space-y above never
+   reaches them — give the rendered blocks their own vertical rhythm. */
+.markdown-content > div > * + * {
+  margin-top: 0.875rem;
+}
+.markdown-content > div > * + :is(h1, h2, h3, h4) {
+  margin-top: 1.5rem;
+}
+.markdown-content > div > :is(h1, h2, h3, h4) + * {
+  margin-top: 0.5rem;
+}
+
+.markdown-content h1 {
+  @apply text-2xl font-bold text-foreground;
+}
+
+.markdown-content h2 {
+  @apply text-xl font-semibold text-foreground;
+}
+
+.markdown-content h3 {
+  @apply text-lg font-semibold text-foreground;
+}
+
+.markdown-content p {
+  @apply text-foreground leading-relaxed;
+}
+
+.markdown-content ul, .markdown-content ol {
+  @apply pl-6 space-y-1;
+}
+
+.markdown-content ul {
+  @apply list-disc;
+}
+
+.markdown-content ol {
+  @apply list-decimal;
+}
+
+.markdown-content li {
+  @apply text-foreground;
+}
+
+.markdown-content a {
+  @apply text-accent hover:underline;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-accent pl-4 italic text-foreground-secondary;
+}
+
+.markdown-content hr {
+  @apply border-border my-6;
+}
+
+.markdown-content table {
+  @apply w-full border-collapse;
+}
+
+.markdown-content th, .markdown-content td {
+  @apply border border-border px-4 py-2 text-start;
+}
+
+.markdown-content th {
+  @apply bg-background-tertiary font-semibold;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  font-family: 'Vazirmatn', ui-sans-serif, system-ui, sans-serif;
+}
+
+[dir="rtl"] code,
+[dir="rtl"] pre,
+[dir="rtl"] .code-block {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Scope RTL markdown rules to the wrapper's OWN dir (set per message content),
+   NOT the ancestor <html dir="rtl"> — else English answers get right-aligned. */
+.markdown-content[dir="rtl"] {
+  text-align: right;
+}
+
+.markdown-content[dir="rtl"] ul,
+.markdown-content[dir="rtl"] ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+.markdown-content[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: 4px solid;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+.font-persian {
+  font-family: 'Vazirmatn', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Prose/markdown — same UI stack (mixed LTR/RTL content) */
+.prose,
+.prose-invert,
+.markdown-content {
+  font-family: 'Vazirmatn', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Reduced transparency → solid chrome (no blur). Windows "Transparency effects: off". */
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --glass-bg-opacity: 1;
+    --glass-bg-strong-opacity: 1;
+    --glass-blur: 0px;
+  }
+  .dark {
+    --glass-bg-opacity: 1;
+    --glass-bg-strong-opacity: 1;
+  }
+  .glass-surface {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Contract Reviewer",
+  "subtitle": "Risk matrix and clause notes — not legal advice",
+  "disclaimer": "This output is not legal advice and does not replace a qualified attorney.",
+  "drop": "Drop contract PDF or images",
+  "dropHint": "Up to {{count}} files",
+  "fileRemove": "Remove",
+  "fileChange": "Change",
+  "fileAdd": "Add file",
+  "notes": "Focus notes (optional)",
+  "lang": { "fa": "Persian", "en": "English" },
+  "run": "Review contract",
+  "area": "Area",
+  "level": "Risk",
+  "finding": "Finding",
+  "recommendation": "Recommendation",
+  "clauses": "Key clauses",
+  "openQuestions": "Open questions",
+  "redFlags": "Red flags",
+  "copied": "Copied",
+  "errors": { "generic": "Something went wrong", "uploadFailed": "Upload failed" }
+}

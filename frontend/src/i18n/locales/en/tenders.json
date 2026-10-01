@@ -1,0 +1,27 @@
+{
+  "title": "Tender Assistant",
+  "subtitle": "Compliance matrix, cover letter, and clarifying questions",
+  "disclaimer": "This output is not legal advice and does not replace a tender specialist.",
+  "mode": { "tender": "Tender", "rfq": "RFQ" },
+  "currency": { "toman": "Toman", "rial": "Rial" },
+  "lang": { "fa": "Persian", "en": "English" },
+  "drop": "Drop tender / RFQ documents",
+  "notes": "Company strengths / exclusions",
+  "run": "Analyze",
+  "result": "Result",
+  "matrix": "Compliance matrix",
+  "requirement": "Requirement",
+  "status": "Status",
+  "response": "Response",
+  "amount": "Amount",
+  "coverLetter": "Cover letter (FA)",
+  "questions": "Clarifying questions",
+  "risks": "Risks",
+  "handoff": "Build presentation",
+  "copied": "Copied",
+  "errors": {
+    "generic": "Something went wrong",
+    "uploadFailed": "Upload failed",
+    "handoffFailed": "Presentation handoff failed"
+  }
+}

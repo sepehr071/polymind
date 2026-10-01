@@ -1,0 +1,49 @@
+{
+  "page": {
+    "title": "Automate Agent",
+    "subtitle": "Runs tasks in a cloud browser — powered by browser-use"
+  },
+  "status": {
+    "starting": "Starting",
+    "running": "Running",
+    "completed": "Completed",
+    "error": "Error",
+    "stopped": "Stopped",
+    "timedOut": "Timed Out"
+  },
+  "roles": {
+    "user": "User",
+    "assistant": "Assistant",
+    "tool": "Tool",
+    "final": "Final",
+    "message": "Message"
+  },
+  "input": {
+    "placeholder": "Describe a task for the browser agent… (e.g. 'Find the top 5 Hacker News headlines')",
+    "selectModel": "Select model",
+    "runTask": "Run Task",
+    "stop": "Stop",
+    "starting": "Starting…",
+    "ctrlEnter": "Ctrl+Enter to run"
+  },
+  "stream": {
+    "waiting": "Waiting for first event…",
+    "header": "Event Stream · {{count}} message",
+    "header_other": "Event Stream · {{count}} messages",
+    "jumpToLatest": "Jump to latest",
+    "screenshotTitle": "View screenshot",
+    "screenshotAlt": "step screenshot",
+    "screenshotFullAlt": "full screenshot"
+  },
+  "browser": {
+    "spinningUp": "Spinning up browser…",
+    "iframeTitle": "Live browser preview"
+  },
+  "sidebar": {
+    "title": "Task History",
+    "new": "New",
+    "noTasks": "No tasks yet",
+    "deleteConfirm": "Delete this task?",
+    "deleteTitle": "Delete task"
+  }
+}

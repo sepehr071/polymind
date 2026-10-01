@@ -1,0 +1,108 @@
+{
+  "title": "Presentations",
+  "subtitle": "Turn a topic into an editable slide deck",
+  "comingSoon": "Coming soon",
+  "brief": {
+    "topic": "Topic",
+    "topicPlaceholder": "Describe your topic…",
+    "slideCount": "Slides",
+    "tone": "Tone",
+    "audience": "Audience",
+    "language": "Language",
+    "theme": "Theme",
+    "generateImages": "Generate images",
+    "generateImagesHint": "Let the AI illustrate slides with generated images.",
+    "sources": "Source files (optional)",
+    "addSources": "Add source files",
+    "sourcesHint": "Documents, spreadsheets or PDFs to ground the outline.",
+    "uploading": "Uploading…",
+    "uploadError": "Some files couldn't be uploaded. Try again.",
+    "removeSource": "Remove file",
+    "knowledge": "Knowledge Vault (optional)",
+    "knowledgeHint": "Pick saved items to inform the deck.",
+    "knowledgeError": "Couldn't load your saved items.",
+    "untitledKnowledge": "Untitled",
+    "generate": "Generate outline"
+  },
+  "tones": {
+    "professional": "Professional",
+    "friendly": "Friendly",
+    "persuasive": "Persuasive",
+    "academic": "Academic",
+    "playful": "Playful"
+  },
+  "audiences": {
+    "general": "General",
+    "executives": "Executives",
+    "students": "Students",
+    "engineers": "Engineers",
+    "investors": "Investors"
+  },
+  "languages": {
+    "fa": "Persian",
+    "en": "English"
+  },
+  "themes": {
+    "polymind": "Polymind",
+    "dark": "Dark",
+    "minimal": "Minimal",
+    "vibrant": "Vibrant",
+    "board": "Board",
+    "pitch": "Pitch",
+    "marketing": "Marketing",
+    "mono": "Mono"
+  },
+  "layout": {
+    "title": "Title",
+    "section": "Section",
+    "agenda": "Agenda",
+    "content": "Content",
+    "content_image": "Content + image",
+    "two_column": "Two columns",
+    "comparison": "Comparison",
+    "metrics": "Metrics / KPIs",
+    "process": "Process steps",
+    "timeline": "Timeline",
+    "quote": "Quote",
+    "feature_grid": "Feature grid",
+    "image_hero": "Image hero",
+    "chart": "Chart",
+    "closing": "Closing"
+  },
+  "editor": {
+    "deckTitle": "Deck title",
+    "slideTitle": "Slide title",
+    "layout": "Layout",
+    "bullets": "One bullet per line",
+    "bulletsPlaceholder": "One bullet per line…",
+    "addSlide": "Add slide",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "deleteSlide": "Delete slide",
+    "back": "Back",
+    "render": "Create deck",
+    "hintMetrics": "{{count}} KPIs from AI (kept on render)",
+    "hintStructured": "Structured cards from AI (kept on render)",
+    "hintChart": "Chart data from AI (kept on render)"
+  },
+  "phase": {
+    "outlining": "Building professional outline…",
+    "researching": "Researching topic & sources…",
+    "planning": "Planning narrative & visual direction…",
+    "drafting": "Drafting slides…",
+    "designing": "Assigning layouts & visual recipes…",
+    "reviewing": "Design review & polish…",
+    "rendering": "Building slides…",
+    "imagesSkipped_one": "{{count}} image skipped",
+    "imagesSkipped_other": "{{count}} images skipped"
+  },
+  "preview": {
+    "download": "Download .pptx",
+    "newDeck": "New deck",
+    "approxNote": "Structural preview — final look is the downloaded .pptx",
+    "chartNote": "Chart ({{type}}, {{n}} categories) — see .pptx for live chart"
+  },
+  "errors": {
+    "connectionLost": "Connection dropped while generating (network or timeout). Please try again — the multi-step outline can take 1–2 minutes."
+  }
+}

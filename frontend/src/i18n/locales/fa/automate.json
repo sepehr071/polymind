@@ -1,0 +1,49 @@
+{
+  "page": {
+    "title": "اتوماسیون",
+    "subtitle": "اجرای کارها در یک مرورگر ابری — بر پایه browser-use"
+  },
+  "status": {
+    "starting": "در حال شروع",
+    "running": "در حال اجرا",
+    "completed": "انجام شد",
+    "error": "خطا",
+    "stopped": "متوقف شد",
+    "timedOut": "زمان به پایان رسید"
+  },
+  "roles": {
+    "user": "کاربر",
+    "assistant": "دستیار",
+    "tool": "ابزار",
+    "final": "نتیجه نهایی",
+    "message": "پیام"
+  },
+  "input": {
+    "placeholder": "یک کار برای مرورگر توصیف کنید… (مثلاً «پنج خبر برتر هکر نیوز را پیدا کن»)",
+    "selectModel": "انتخاب مدل",
+    "runTask": "اجرای کار",
+    "stop": "توقف",
+    "starting": "در حال شروع…",
+    "ctrlEnter": "برای اجرا Ctrl+Enter"
+  },
+  "stream": {
+    "waiting": "منتظر اولین رویداد…",
+    "header": "جریان رویداد · {{count}} پیام",
+    "header_other": "جریان رویداد · {{count}} پیام",
+    "jumpToLatest": "رفتن به آخرین مورد",
+    "screenshotTitle": "مشاهده اسکرین‌شات",
+    "screenshotAlt": "اسکرین‌شات مرحله",
+    "screenshotFullAlt": "اسکرین‌شات کامل"
+  },
+  "browser": {
+    "spinningUp": "در حال راه‌اندازی مرورگر…",
+    "iframeTitle": "پیش‌نمایش زنده مرورگر"
+  },
+  "sidebar": {
+    "title": "تاریخچه کارها",
+    "new": "جدید",
+    "noTasks": "هنوز کاری ثبت نشده",
+    "deleteConfirm": "این کار حذف شود؟",
+    "deleteTitle": "حذف کار"
+  }
+}

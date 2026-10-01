@@ -1,0 +1,189 @@
+{
+  "navbar": {
+    "features": "Features",
+    "demo": "Demo",
+    "login": "Login",
+    "get_started": "Sign In",
+    "enter_app": "Enter app"
+  },
+  "hero": {
+    "badge": "Enterprise AI Platform",
+    "headline_1": "One platform,",
+    "headline_accent": "for your whole organization",
+    "subheadline": "Bring every team onto one secure AI workspace, with role-based access, built-in data protection, and full cost visibility across your company.",
+    "cta_primary": "Sign In",
+    "cta_secondary": "See How It Works",
+    "pills": {
+      "privacy": "Data stays in-house",
+      "local": "Local model option",
+      "safety": "Content safety",
+      "access": "Role-based access"
+    }
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Everything your organization needs",
+    "subtitle": "A complete, secure AI workspace built for teams and companies.",
+    "items": {
+      "roles": {
+        "title": "Companies, teams & roles",
+        "description": "Organize work into companies, teams, and projects with owner, editor, and viewer roles, plus admin oversight across the whole holding."
+      },
+      "dlp": {
+        "title": "Content safety",
+        "description": "Workspace-scoped content checking scans every prompt, with policy tiers and automatic blocking of sensitive content."
+      },
+      "cost": {
+        "title": "Cost & usage governance",
+        "description": "Track usage per company, manage billing and credits, and give owners full visibility into spend."
+      },
+      "chat": {
+        "title": "Collaborative Chat",
+        "description": "Real-time streaming chat for your teams, with conversation branching and shared personas."
+      },
+      "workflows": {
+        "title": "Visual Workflows",
+        "description": "Build AI pipelines with drag-and-drop: chain steps and automate work visually."
+      },
+      "knowledge": {
+        "title": "Knowledge Vault",
+        "description": "Save valuable answers, organize with folders and tags, and search across everything."
+      },
+      "canvas": {
+        "title": "Code Canvas",
+        "description": "Generate and run code in a secure in-chat sandbox, instantly."
+      }
+    }
+  },
+  "demo": {
+    "badge": "Interactive Demo",
+    "title": "See it in action",
+    "subtitle": "Explore the core workspace features.",
+    "tabs": {
+      "chat": "Chat",
+      "workflows": "Workflows",
+      "knowledge": "Knowledge"
+    },
+    "items": {
+      "chat": {
+        "title": "Collaborative Chat",
+        "description": "Bring your teams into one shared AI workspace with real-time streaming, conversation branching, and reusable personas.",
+        "features": ["Real-time streaming", "Conversation branching", "Shared personas"]
+      },
+      "workflows": {
+        "title": "Visual Workflows",
+        "description": "Automate repetitive work by chaining AI steps into visual pipelines your teams can build and reuse.",
+        "features": ["Drag-and-drop builder", "Reusable pipelines", "Task automation"]
+      },
+      "knowledge": {
+        "title": "Knowledge Vault",
+        "description": "Capture valuable answers and documents, organize them by team, and search across your whole organization.",
+        "features": ["Organized by team", "Full-text search", "Folders and tags"]
+      }
+    },
+    "mock": {
+      "chat": {
+        "persona_analyst": "Analyst",
+        "persona_writer": "Writer",
+        "user": "Draft the Q3 board update.",
+        "assistant": "Here's a first pass, grouped by region.",
+        "branch": "New branch"
+      },
+      "workflows": {
+        "input": "Brief",
+        "agent": "AI Agent",
+        "output": "Image"
+      },
+      "knowledge": {
+        "search": "Search the vault…",
+        "result_1": "Q3 board update",
+        "result_2": "Brand voice guide",
+        "result_3": "Pricing FAQ",
+        "tag_team": "Marketing",
+        "tag_folder": "Playbooks"
+      }
+    }
+  },
+  "showcase": {
+    "badge": "Product",
+    "title": "Your whole AI day, in one window",
+    "subtitle": "A fast, focused workspace your organization can rely on.",
+    "mock": {
+      "title": "Polymind AI",
+      "nav_chat": "Chat",
+      "nav_workflows": "Workflows",
+      "nav_knowledge": "Knowledge",
+      "user_message": "Summarize Q3 results for the leadership team.",
+      "assistant_line_1": "Here is a concise Q3 summary:",
+      "assistant_line_2": "Revenue grew across all three regions, led by enterprise accounts.",
+      "composer_placeholder": "Message Polymind AI…"
+    }
+  },
+  "how": {
+    "badge": "How it works",
+    "title": "Up and running in three steps",
+    "subtitle": "From sign-in to your first answer in minutes.",
+    "steps": {
+      "signin": {
+        "title": "Sign in securely",
+        "description": "Your administrator provisions access with role-based permissions."
+      },
+      "workspace": {
+        "title": "Pick your workspace",
+        "description": "Jump into your team's shared chat, workflows, and knowledge."
+      },
+      "work": {
+        "title": "Start working",
+        "description": "Chat, automate, and capture knowledge in one governed place."
+      }
+    }
+  },
+  "stats": {
+    "statement": {
+      "workspace": "One workspace.",
+      "tools": "tools.",
+      "governance": "layers of governance.",
+      "subscriptions": "Zero scattered subscriptions."
+    }
+  },
+  "cta": {
+    "badge": "Enterprise-ready",
+    "title": "Already onboarded?",
+    "subtitle": "Sign in to your organization's secure, governed AI platform. Access is provisioned by your administrator.",
+    "primary": "Sign In",
+    "secondary": "Contact your admin",
+    "trust": {
+      "no_card": "Single sign-on",
+      "free": "Data protection",
+      "open_source": "Invite-only access"
+    }
+  },
+  "privacy": {
+    "badge": "Privacy & security",
+    "title": "Your data never leaves your company",
+    "subtitle": "Built for organizations that can't send sensitive work to the public cloud. Every chat, document, and model run stays inside your own walls.",
+    "pillars": {
+      "residency": {
+        "title": "Data stays in-house",
+        "description": "Conversations, files, and knowledge live on your company's own infrastructure, not a third-party cloud."
+      },
+      "local": {
+        "title": "Optional local model",
+        "description": "Run content scanning and chat on a model hosted inside your network for the most sensitive data."
+      },
+      "dlp": {
+        "title": "Content safety",
+        "description": "Every message is scanned at the edge; sensitive values are flagged or blocked before they leave."
+      }
+    },
+    "diagram": {
+      "company": "Your company",
+      "chat": "Chat",
+      "knowledge": "Knowledge",
+      "model": "Local model",
+      "scan": "Safety scan",
+      "external": "Public internet",
+      "blocked": "No data leaves"
+    }
+  }
+}

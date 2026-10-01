@@ -1,0 +1,59 @@
+{
+  "label": "Company",
+  "labelPlural": "Companies",
+  "current": "Current company",
+  "projectLabel": "Team",
+  "switcher": {
+    "noCompany": "No company",
+    "personal": "Personal",
+    "other": "Other companies",
+    "create": "Create company",
+    "settings": "Company settings",
+    "search": "Switch company…"
+  },
+  "create": { "title": "Create a new company", "namePlaceholder": "Acme Inc." },
+  "onboarding": {
+    "welcomeManager": "Welcome — let's set up your company",
+    "stepProgress": "Step {{current}} of {{total}}",
+    "step1Title": "Name your company",
+    "step2Title": "Invite your team",
+    "emailsLabel": "Emails",
+    "emailsPlaceholder": "alice@acme.com, bob@acme.com",
+    "emailsHint": "Separate by comma or newline.",
+    "roleLabel": "Role",
+    "skip": "Skip for now",
+    "skipForNow": "Set up later",
+    "finish": "Finish",
+    "finishing": "Finishing…",
+    "createFailed": "Failed to create company",
+    "toastSuccess": "{{count}} invite sent",
+    "toastSuccess_other": "{{count}} invites sent",
+    "toastNoEmail": "Some invites were created without email delivery — share the invite links manually.",
+    "toastFailed_one": "Couldn't invite: {{list}}",
+    "toastFailed_other": "Couldn't invite {{count}} addresses:\n{{list}}",
+    "failedReasonGeneric": "failed",
+    "invalidEmailsWarn_one": "This doesn't look like an email and will be skipped: {{list}}",
+    "invalidEmailsWarn_other": "These don't look like emails and will be skipped: {{list}}",
+    "hierarchyTitle": "How Polymind is organized",
+    "hierarchyCompany": "Company",
+    "hierarchyCompanyDesc": "your whole organization — billing, members, and content safety live here.",
+    "hierarchyTeam": "Team",
+    "hierarchyTeamDesc": "a space inside the company for a department or initiative — chats, knowledge, and defaults live here."
+  },
+  "empty": { "notManager": "Ask your manager to add you to a company." },
+  "transferOwnership": {
+    "title": "Transfer ownership",
+    "warning": "You will become an Editor and lose owner privileges.",
+    "confirm": "Transfer"
+  },
+  "settings": "Company settings",
+  "settingsSubtitle": "Manage members, billing, and security policies",
+  "renamed": "Company renamed",
+  "created": "Company \"{{name}}\" created",
+  "hero": {
+    "eyebrow": "Overview",
+    "members": "Members",
+    "projects": "Teams",
+    "messages": "Messages this month"
+  }
+}

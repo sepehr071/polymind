@@ -1,0 +1,64 @@
+[project]
+name = "unichat-backend"
+version = "0.1.0"
+description = "Polymind backend — FastAPI (importable as `app`)"
+requires-python = ">=3.12"
+dependencies = [
+  "pymongo==4.17.0",  # TODO(Phase 6): remove with the bson/ObjectId purge
+  "bcrypt==5.0.0",
+  "PyJWT[crypto]==2.12.1",
+  "cryptography>=48.0.0",
+  "requests==2.33.1",
+  "httpx==0.28.1",
+  "email-validator==2.3.0",
+  "pillow==12.2.0",
+  "python-dotenv==1.2.2",
+  "gunicorn==25.3.0",
+  "PyYAML==6.0.3",
+  "filetype",
+  "elevenlabs>=2.44.0",
+  "rapidfuzz>=3.0",
+  "jsonschema>=4.0",
+  "sqlalchemy>=2.0,<3.0",
+  "alembic>=1.13,<2.0",
+  "psycopg[binary]>=3.2,<4.0",
+  "fastapi>=0.136.3",
+  "uvicorn[standard]>=0.48.0",
+  "python-multipart>=0.0.29",
+  "python-docx>=1.2.0",
+  "openpyxl>=3.1.5",
+  "python-pptx>=1.0.2",
+  "xlrd>=2.0.2",
+  "olefile>=0.47",
+  "reportlab>=4.5.1",
+  "arabic-reshaper>=3.0.1",
+  "python-bidi>=0.6.10",
+  "fpdf2>=2.8.5",
+  "uharfbuzz>=0.56.2",
+]
+
+[dependency-groups]
+dev = [
+  "pytest==7.4.3",
+  "pytest-cov==4.1.0",
+  "pytest-mock==3.12.0",
+  "faker==22.0.0",
+  "factory-boy==3.3.0",
+  "freezegun==1.4.0",
+  "responses==0.24.1",
+  "requests-mock==1.11.0",
+  "pytest-randomly==3.15.0",
+  "pytest-xdist==3.5.0",
+  "coverage[toml]==7.4.0",
+  "setuptools<81",
+]
+
+[tool.setuptools]
+packages = ["app"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = false

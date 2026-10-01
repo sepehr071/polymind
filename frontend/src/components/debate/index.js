@@ -1,0 +1,5 @@
+export { default as DebateSetup } from './DebateSetup'
+export { default as DebateArena } from './DebateArena'
+export { default as DebaterResponse } from './DebaterResponse'
+export { default as JudgeVerdict } from './JudgeVerdict'
+export { default as DebateHistory } from './DebateHistory'

@@ -1,0 +1,40 @@
+{
+  "title": "Helper",
+  "pageTitle": "Support Assistant",
+  "placeholder": "Ask anything...",
+  "composerAria": "Message the support assistant",
+  "send": "Send",
+  "stop": "Stop",
+  "retry": "Retry",
+  "clear": "Clear",
+  "clearTitle": "Clear helper history",
+  "clearConfirm": "Clear all helper history?",
+  "collapse": "Collapse",
+  "expand": "Expand",
+  "empty": {
+    "title": "Welcome — I'm your in-app guide.",
+    "body": "Ask me how to use any page, or use the chips I share to jump straight there.",
+    "suggestionsLabel": "Try asking",
+    "suggestions": {
+      "navigate": "How do I start a new chat?",
+      "image": "How do I generate an image?",
+      "workflow": "What can I build with workflows?",
+      "knowledge": "How does the knowledge vault work?"
+    }
+  },
+  "errorStreaming": "Connection error. Please retry.",
+  "streamingAria": "Assistant is replying",
+  "loading": "Thinking...",
+  "historyLoading": "Loading history…",
+  "historyError": {
+    "title": "Couldn't load history",
+    "body": "Something went wrong while loading your previous messages.",
+    "retry": "Try again"
+  },
+  "dlp": {
+    "warn": "Quick heads up before you send.",
+    "confirm": "This looks sensitive. Confirm before sending.",
+    "block": "We can't send this one, it looks like it has sensitive info. You can tidy it and try again.",
+    "autoRedacted": "Sensitive info was redacted before sending"
+  }
+}

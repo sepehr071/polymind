@@ -1,0 +1,484 @@
+{
+  "page": {
+    "scrollToZoom": "Scroll to zoom · Drag to pan",
+    "rightClickHint": "Right-click any node for actions",
+    "dismissHint": "Dismiss hint",
+    "closeNodeRail": "Close node rail",
+    "addNodes": "Add nodes",
+    "runHistory": "Run History",
+    "closeRunHistory": "Close run history"
+  },
+  "breadcrumb": {
+    "workflows": "Workflows",
+    "untitledWorkflow": "Untitled Workflow",
+    "clickToRename": "Click to rename",
+    "empty": "empty",
+    "nodes_one": "{{count}} node",
+    "nodes_other": "{{count}} nodes",
+    "saving": "Saving…",
+    "unsaved": "Unsaved",
+    "saved": "Saved {{time}}",
+    "templates": "Templates",
+    "browseTemplates": "Browse workflow templates",
+    "generate": "Generate",
+    "generateFromBrief": "Generate workflow from a brief",
+    "runs": "Runs",
+    "toggleRunHistory": "Toggle run history",
+    "run": "Run",
+    "runWorkflow": "Run workflow (⌘↵)",
+    "moreActions": "More actions",
+    "new": "New",
+    "save": "Save",
+    "load": "Load",
+    "duplicate": "Duplicate",
+    "delete": "Delete",
+    "import": "Import",
+    "export": "Export"
+  },
+  "nodeRail": {
+    "searchNodes": "Search nodes",
+    "searchPlaceholder": "Search node types...",
+    "noNodesFound": "No nodes found.",
+    "generateWithAI": "Generate with AI",
+    "generateDescription": "Auto-build workflow from description",
+    "categories": {
+      "INPUT": "Inputs",
+      "AI": "AI",
+      "GEN": "Generation",
+      "MARKETING": "Marketing",
+      "DEV": "Developer",
+      "AUTOMATION": "Automation"
+    },
+    "tabsLabel": "Node groups",
+    "tabs": {
+      "all": "All",
+      "marketing": "Marketing",
+      "dev": "Developer",
+      "automation": "Automation"
+    },
+    "nodes": {
+      "textInput": {
+        "label": "Brief / Content",
+        "description": "Paste briefs, copy, or product details"
+      },
+      "imageUpload": {
+        "label": "Reference Image",
+        "description": "Add a style or product reference"
+      },
+      "aiAgent": {
+        "label": "Copywriter",
+        "description": "Improve and generate copy with AI"
+      },
+      "ttsNode": {
+        "label": "Voiceover",
+        "description": "Convert text to spoken audio"
+      },
+      "imageGen": {
+        "label": "Image",
+        "description": "Generate image from a prompt"
+      },
+      "videoGenNode": {
+        "label": "Video",
+        "description": "Generate short video clips"
+      },
+      "personaBuilderNode": {
+        "label": "Persona Builder",
+        "description": "Craft a target audience persona"
+      },
+      "seoBriefNode": {
+        "label": "SEO Brief",
+        "description": "Keyword and competitor brief"
+      },
+      "hashtagPackNode": {
+        "label": "Hashtag Pack",
+        "description": "Curate a pack of trending hashtags"
+      },
+      "audienceMatchNode": {
+        "label": "Audience Match",
+        "description": "Match copy tone to the audience"
+      },
+      "apiCallNode": {
+        "label": "API Call",
+        "description": "Call an external API endpoint"
+      },
+      "jsonTransformNode": {
+        "label": "JSON Transform",
+        "description": "Reshape a JSON payload"
+      },
+      "codeRunnerNode": {
+        "label": "Code Runner",
+        "description": "Run a snippet in a sandbox"
+      },
+      "gitActionNode": {
+        "label": "Git Action",
+        "description": "Run a Git command"
+      },
+      "webhookTriggerNode": {
+        "label": "Webhook",
+        "description": "Trigger on an inbound HTTP request"
+      },
+      "cronScheduleNode": {
+        "label": "Cron Schedule",
+        "description": "Schedule with a cron expression"
+      },
+      "branchConditionNode": {
+        "label": "Branch Condition",
+        "description": "Branch the flow on a condition"
+      },
+      "httpRequestNode": {
+        "label": "HTTP Request",
+        "description": "Send an outbound HTTP request"
+      }
+    },
+    "addNode": "Add {{label}} node"
+  },
+  "commandBar": {
+    "addNode": "Add node",
+    "addNodeHotkey": "Add node · A",
+    "duplicate": "Duplicate",
+    "delete": "Delete",
+    "nodeTypes": {
+      "textInput": "Text Input",
+      "imageUpload": "Image Upload",
+      "aiAgent": "AI Agent",
+      "imageGen": "Image Gen",
+      "ttsNode": "TTS",
+      "videoGenNode": "Video Gen",
+      "personaBuilderNode": "Persona Builder",
+      "seoBriefNode": "SEO Brief",
+      "hashtagPackNode": "Hashtag Pack",
+      "audienceMatchNode": "Audience Match",
+      "apiCallNode": "API Call",
+      "jsonTransformNode": "JSON Transform",
+      "codeRunnerNode": "Code Runner",
+      "gitActionNode": "Git Action",
+      "webhookTriggerNode": "Webhook",
+      "cronScheduleNode": "Cron Schedule",
+      "branchConditionNode": "Branch Condition",
+      "httpRequestNode": "HTTP Request"
+    }
+  },
+  "zoomBar": {
+    "zoomOut": "Zoom out",
+    "resetZoom": "Reset zoom",
+    "zoomIn": "Zoom in"
+  },
+  "inspector": {
+    "selected": "selected",
+    "runThisNode": "Run this node only",
+    "closeInspector": "Close inspector",
+    "noRunsNode": "No runs yet for this node.",
+    "tabs": {
+      "configure": "Configure",
+      "output": "Output",
+      "history": "History"
+    },
+    "nodeMeta": {
+      "textInput": "Brief / Content",
+      "imageUpload": "Reference Image",
+      "aiAgent": "Copywriter",
+      "imageGen": "Image",
+      "ttsNode": "Voiceover",
+      "videoGenNode": "Video",
+      "personaBuilderNode": "Persona Builder",
+      "seoBriefNode": "SEO Brief",
+      "hashtagPackNode": "Hashtag Pack",
+      "audienceMatchNode": "Audience Match",
+      "apiCallNode": "API Call",
+      "jsonTransformNode": "JSON Transform",
+      "codeRunnerNode": "Code Runner",
+      "gitActionNode": "Git Action",
+      "webhookTriggerNode": "Webhook",
+      "cronScheduleNode": "Cron Schedule",
+      "branchConditionNode": "Branch Condition",
+      "httpRequestNode": "HTTP Request"
+    }
+  },
+  "emptyCanvas": {
+    "title": "Start building your workflow",
+    "subtitle": "Choose how you want to get started",
+    "startFromBrief": "Start from a brief",
+    "startFromBriefDesc": "Describe your goal and AI builds the workflow",
+    "browseTemplates": "Browse templates",
+    "browseTemplatesDesc": "Pick a ready-made workflow for your use case",
+    "manualBuilder": "Manual builder",
+    "manualBuilderDesc": "Drag and drop nodes to build from scratch",
+    "backToOptions": "Back to options"
+  },
+  "emptyState": {
+    "title": "Start building your workflow",
+    "description": "Generate one from a brief, pick a template, or drag nodes from the rail to build manually.",
+    "cta": "Generate from brief",
+    "suggestions": [
+      "Generate workflow from a brief",
+      "Browse workflow templates",
+      "Drag a node from the rail"
+    ]
+  },
+  "loadModal": {
+    "title": "Load Workflow",
+    "myWorkflows": "My Workflows ({{count}})",
+    "templates": "Templates ({{count}})",
+    "noWorkflows": "No workflows yet. Create one or start from a template!",
+    "noTemplatesInCategory": "No templates in this category yet.",
+    "projectSection": "Team · {{name}}",
+    "myWorkflowsSection": "My Workflows",
+    "nodes": "{{count}} nodes",
+    "readyToUse": "{{count}} nodes · Ready to use",
+    "cancel": "Cancel",
+    "categories": {
+      "all": "All",
+      "socialMedia": "Social Media",
+      "other": "Other"
+    }
+  },
+  "runHistory": {
+    "title": "Run History",
+    "selectRun": "Select a run to view details",
+    "noRuns": "No runs yet.",
+    "noRunsForNode": "No runs yet for this node.",
+    "noRunsMatch": "No runs match",
+    "noNodeResults": "No node results recorded",
+    "filters": {
+      "all": "All",
+      "success": "Successful",
+      "failed": "Failed"
+    },
+    "searchPlaceholder": "Search node…",
+    "rerunNode": "Re-run this node",
+    "videoOutput": "[video output]",
+    "success": "success",
+    "failed": "failed"
+  },
+  "contextMenu": {
+    "duplicate": "Duplicate",
+    "runThisNode": "Run This Node",
+    "delete": "Delete"
+  },
+  "outputActionBar": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "download": "Download",
+    "save": "Save",
+    "saving": "Saving…",
+    "chat": "Chat",
+    "opening": "Opening…",
+    "errorCopy": "Failed to copy to clipboard",
+    "errorDownload": "Download failed",
+    "errorNoContent": "No content to save",
+    "errorSaveFirst": "Save the workflow first",
+    "errorNodeId": "Missing node id",
+    "successSave": "Saved to Knowledge Vault",
+    "errorSave": "Failed to save to knowledge",
+    "errorChat": "Failed to open in chat",
+    "errorNoConversationId": "No conversation id returned"
+  },
+  "aiAgentInspector": {
+    "noOutput": "No output yet. Run the workflow to see results.",
+    "output": "Output",
+    "copyOutput": "Copy output",
+    "copy": "Copy",
+    "viewFullscreen": "View fullscreen",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "variantOf": "Variant {{index}} of {{total}}",
+    "copyVariant": "Copy variant",
+    "copied": "Copied!",
+    "close": "Close",
+    "modalTitle": "AI Agent Output",
+    "lastRun": "Last run",
+    "tokens": "tokens",
+    "variantKnowledgeTitle": "Copywriter variant {{index}}",
+    "outputKnowledgeTitle": "Copywriter output",
+    "maxChars": "Max {{count}} chars",
+    "loadingFolders": "Loading…",
+    "noFolder": "(none)",
+    "variantSingle": "1 (single output)",
+    "variantCount": "{{count}} variants",
+    "inputVars_one": "{{count}} input variable",
+    "inputVars_other": "{{count}} input variables",
+    "fields": {
+      "model": "Model",
+      "platform": "Platform",
+      "systemPrompt": "System Prompt",
+      "brandBrief": "Brand brief (knowledge folder)",
+      "variants": "Variants",
+      "userPrompt": "User Prompt Template"
+    },
+    "placeholders": {
+      "systemPrompt": "You are a helpful assistant...",
+      "userPrompt": "Use {{input}} for connected input"
+    }
+  },
+  "imageGenInspector": {
+    "noOutput": "No image generated yet. Run the workflow to see results.",
+    "generatedAlt": "Generated",
+    "knowledgeTitle": "Generated image",
+    "maxRefImages_one": "Max {{count}} reference image",
+    "maxRefImages_other": "Max {{count}} reference images",
+    "referenceHelp_one": "Connect up to {{count}} Image Upload node to the left handles to use as references.",
+    "referenceHelp_other": "Connect up to {{count}} Image Upload nodes to the left handles to use as references.",
+    "stylePresets": {
+      "photorealistic": "Photorealistic",
+      "illustration": "Illustration",
+      "minimalist": "Minimalist",
+      "bold-brand": "Bold Brand"
+    },
+    "fields": {
+      "model": "Model",
+      "aspectRatio": "Aspect ratio",
+      "style": "Style",
+      "prompt": "Prompt",
+      "negativePrompt": "Negative Prompt",
+      "referenceImages": "Reference Images"
+    },
+    "placeholders": {
+      "prompt": "Describe the image...",
+      "negativePrompt": "What to avoid..."
+    }
+  },
+  "textInputInspector": {
+    "noOutput": "No text entered yet.",
+    "knowledgeTitle": "Text input",
+    "fields": {
+      "text": "Text",
+      "placeholder": "Placeholder"
+    },
+    "placeholders": {
+      "text": "Enter text...",
+      "placeholder": "Enter text..."
+    }
+  },
+  "ttsInspector": {
+    "noOutput": "No audio generated yet. Run the workflow to see results.",
+    "audio": "Audio",
+    "audioDuration": "Audio ~{{duration}}s",
+    "copyDataUrl": "Copy data URL",
+    "knowledgeTitle": "Generated voiceover",
+    "fields": {
+      "text": "Text",
+      "model": "Model",
+      "voice": "Voice",
+      "speed": "Speed"
+    },
+    "placeholders": {
+      "text": "Enter text, or connect an AI Agent output..."
+    }
+  },
+  "videoGenInspector": {
+    "noOutput": "No video generated yet. Run the workflow to see results.",
+    "modalTitle": "Generated Video",
+    "copyUrl": "Copy URL",
+    "fullscreen": "Fullscreen",
+    "close": "Close",
+    "videoLabel": "Video",
+    "knowledgeTitle": "Generated video",
+    "estCost": "Est. cost",
+    "audioAlwaysOn": "Native audio always on for this model.",
+    "noFrameImage": "This model ignores the frame_image input (text-to-video only).",
+    "frameImageHelp": "Connect an Image Upload node to the top-left handle to use as a frame reference.",
+    "fields": {
+      "model": "Model",
+      "prompt": "Prompt",
+      "duration": "Duration (s)",
+      "resolution": "Resolution",
+      "aspectRatio": "Aspect Ratio",
+      "seed": "Seed",
+      "generateAudio": "Generate Audio (native)",
+      "frameImage": "Frame Image"
+    },
+    "placeholders": {
+      "prompt": "Describe the video, or connect a prompt input...",
+      "seed": "Random"
+    }
+  },
+  "imageUploadInspector": {
+    "noOutput": "No image uploaded yet.",
+    "uploadedAlt": "Uploaded",
+    "dropOrClick": "Drop image or click to upload",
+    "formats": "PNG, JPG, WEBP, GIF",
+    "replaceImage": "Replace Image",
+    "fields": {
+      "image": "Image"
+    }
+  },
+  "workflowGenerator": {
+    "title": "AI Workflow Generator",
+    "description": "Describe what you want to create, and AI will generate the workflow for you.",
+    "placeholder": "Describe your workflow... e.g., 'Create a product photo with studio lighting, then generate 3 social media variations'",
+    "tryAnExample": "Try an example:",
+    "generating": "Generating workflow...",
+    "generate": "Generate Workflow",
+    "ctrlEnterHint": "Press Ctrl+Enter to generate"
+  },
+  "compactNodeShell": {
+    "empty": "Empty",
+    "lastRun": "Last run {{time}}"
+  },
+  "nodeHandles": {
+    "textInput": "Text input",
+    "textOut": "Text out",
+    "imageOut": "Image out",
+    "audioOut": "Audio out",
+    "videoOut": "Video out",
+    "reference1": "Reference 1",
+    "reference2": "Reference 2",
+    "reference3": "Reference 3",
+    "scriptText": "Script text",
+    "keyframeImage": "Keyframe image",
+    "promptText": "Prompt text"
+  },
+  "nodeDefaults": {
+    "copywriter": "Copywriter",
+    "image": "Image",
+    "voiceover": "Voiceover",
+    "video": "Video",
+    "briefContent": "Brief / Content",
+    "referenceImage": "Reference Image",
+    "noModel": "No model",
+    "noText": "No text",
+    "noImage": "No image",
+    "imageLoaded": "Image loaded",
+    "chooseVoice": "Choose voice",
+    "rendering": "rendering",
+    "renderingProgress": "rendering {{progress}}%"
+  },
+  "toasts": {
+    "nodeDuplicated": "Node duplicated",
+    "nodeDeleted": "Node deleted",
+    "newWorkflowCreated": "New workflow created",
+    "enterWorkflowName": "Please enter a workflow name",
+    "workflowSaved": "Workflow \"{{name}}\" saved",
+    "failedSaveWorkflow": "Failed to save workflow",
+    "loadedWorkflow": "Loaded \"{{name}}\"",
+    "failedLoadWorkflow": "Failed to load workflow",
+    "loadedTemplate": "Loaded template \"{{name}}\"",
+    "failedLoadTemplate": "Failed to load template",
+    "noWorkflowSelected": "No workflow selected",
+    "workflowDeleted": "Workflow deleted",
+    "failedDeleteWorkflow": "Failed to delete workflow",
+    "workflowDuplicated": "Workflow duplicated as \"{{name}}\"",
+    "failedDuplicateWorkflow": "Failed to duplicate workflow",
+    "noNodesToExport": "No nodes to export",
+    "workflowExported": "Workflow exported",
+    "importedWorkflow": "Imported \"{{name}}\"",
+    "failedImportWorkflow": "Failed to import workflow: Invalid JSON format",
+    "saveBeforeExecuting": "Please save workflow before executing",
+    "nodeExecutedSuccessfully": "Node executed successfully",
+    "workflowCompleted": "Workflow completed successfully",
+    "workflowFailed": "Workflow execution failed",
+    "workflowGenerated": "Workflow generated! Review and save when ready.",
+    "unknownError": "An unknown error occurred.",
+    "rateLimitError": "Too many requests — wait a minute and try again.",
+    "promptRejected": "Prompt was rejected — try simpler wording.",
+    "imageTooLarge": "Reference image too big — try a smaller image.",
+    "modelNotFound": "Selected model is unavailable — pick another."
+  },
+  "deleteDialog": {
+    "title": "Delete Workflow",
+    "message": "Are you sure you want to delete \"{{name}}\"? This action cannot be undone.",
+    "confirm": "Delete",
+    "cancel": "Cancel"
+  },
+  "showcaseNodeNotImplemented": "Coming soon — execution not implemented yet."
+}

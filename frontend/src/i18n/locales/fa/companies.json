@@ -1,0 +1,59 @@
+{
+  "label": "شرکت",
+  "labelPlural": "شرکت‌ها",
+  "current": "شرکت فعلی",
+  "projectLabel": "تیم",
+  "switcher": {
+    "noCompany": "بدون شرکت",
+    "personal": "شخصی",
+    "other": "سایر شرکت‌ها",
+    "create": "ایجاد شرکت",
+    "settings": "تنظیمات شرکت",
+    "search": "جستجوی شرکت‌ها…"
+  },
+  "create": { "title": "ایجاد شرکت جدید", "namePlaceholder": "مثلاً شرکت آکمی" },
+  "onboarding": {
+    "welcomeManager": "خوش آمدید — شرکت‌تان را راه‌اندازی کنیم",
+    "stepProgress": "مرحله {{current}} از {{total}}",
+    "step1Title": "نام شرکت",
+    "step2Title": "دعوت اعضای تیم",
+    "emailsLabel": "ایمیل‌ها",
+    "emailsPlaceholder": "alice@acme.com, bob@acme.com",
+    "emailsHint": "ایمیل‌ها را با کاما یا خط جدید از هم جدا کنید.",
+    "roleLabel": "نقش",
+    "skip": "فعلاً رد شو",
+    "skipForNow": "بعداً تنظیم می‌کنم",
+    "finish": "پایان",
+    "finishing": "در حال تکمیل…",
+    "createFailed": "ایجاد شرکت ناموفق بود",
+    "toastSuccess": "{{count}} دعوت‌نامه ارسال شد",
+    "toastSuccess_other": "{{count}} دعوت‌نامه ارسال شد",
+    "toastNoEmail": "برخی دعوت‌نامه‌ها بدون ارسال ایمیل ساخته شدند — لینک‌های دعوت را دستی برای افراد بفرستید.",
+    "toastFailed_one": "دعوت ناموفق بود: {{list}}",
+    "toastFailed_other": "دعوت {{count}} نشانی ناموفق بود:\n{{list}}",
+    "failedReasonGeneric": "ناموفق",
+    "invalidEmailsWarn_one": "این مورد ایمیل معتبری به‌نظر نمی‌رسد و نادیده گرفته می‌شود: {{list}}",
+    "invalidEmailsWarn_other": "این موارد ایمیل معتبری به‌نظر نمی‌رسند و نادیده گرفته می‌شوند: {{list}}",
+    "hierarchyTitle": "ساختار Polymind چگونه است",
+    "hierarchyCompany": "شرکت",
+    "hierarchyCompanyDesc": "کل سازمان شما؛ صورت‌حساب، اعضا و ایمنی محتوا اینجا تعریف می‌شوند.",
+    "hierarchyTeam": "تیم",
+    "hierarchyTeamDesc": "فضایی درون شرکت برای یک واحد یا فعالیت — چت‌ها، پایگاه دانش و پیش‌فرض‌ها اینجا هستند."
+  },
+  "empty": { "notManager": "از مدیرتان بخواهید شما را به یک شرکت اضافه کند." },
+  "transferOwnership": {
+    "title": "انتقال مالکیت",
+    "warning": "نقش شما به ویرایشگر تغییر می‌کند و دسترسی مالک را از دست می‌دهید.",
+    "confirm": "انتقال"
+  },
+  "settings": "تنظیمات شرکت",
+  "settingsSubtitle": "مدیریت اعضا، صورت‌حساب و سیاست‌های امنیتی",
+  "renamed": "نام شرکت تغییر کرد",
+  "created": "شرکت «{{name}}» ایجاد شد",
+  "hero": {
+    "eyebrow": "نمای کلی",
+    "members": "اعضا",
+    "projects": "تیم‌ها",
+    "messages": "پیام‌های این ماه"
+  }
+}

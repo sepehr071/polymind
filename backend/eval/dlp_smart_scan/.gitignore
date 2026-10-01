@@ -1,0 +1,3 @@
+# Local scratch only — live reports live at repo-root reports/ (gitignored there)
+*.json
+!corpus.jsonl

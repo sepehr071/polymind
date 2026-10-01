@@ -1,0 +1,110 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+
+# Environment
+.env
+backend/.env
+.env.local
+.env.*.local
+# Underscore-style env files (Dockerfile_front COPYs .env_front; .env_prod etc.)
+.env_front
+.env_*
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+/nul
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Data Analyzer sandbox — dedicated venv + per-conversation scratch workdirs.
+# The venv is provisioned per-host (see backend/sandbox/README.md); the workdirs
+# hold copied user data + run artifacts and must never be committed.
+backend/sandbox/.venv-sandbox/
+backend/data_sandbox/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Playwright
+frontend/test-results/*
+frontend/playwright-report/
+frontend/playwright/.cache/
+.playwright-mcp/
+
+# Misc
+*.bak
+*.tmp
+
+# Auto Claude
+.auto-claude/
+.auto-claude-*
+.claude_settings.json
+.claude/settings.local.json
+
+# Auto Claude generated files
+.auto-claude-security.json
+.auto-claude-status
+.worktrees/
+.security-key
+logs/security/
+
+# Deployment scripts with secrets (SSL keys)
+backend/deploy.sh
+backend/update.sh
+
+# Plan files
+.claude/plans/
+.claude/scheduled_tasks.lock
+
+# Serena MCP local cache + memories (machine-specific)
+.serena/
+
+
+*.err
+.claude/worktrees/
+.claude.local.md
+
+# Deploy staging artifacts
+_deploy/
+
+# Agent/local scratch (MCP tool dumps, terminal captures)
+mcps/
+terminals/
+
+# Claude design handoff scratch (spec import)
+design-handoff/
+Consistent UIUX design-handoff*.zip
+
+# Local data
+*.db
+*.sqlite
+*.sqlite3
+frontend/vite.err
+reports/

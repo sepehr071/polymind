@@ -1,0 +1,497 @@
+{
+  "actions": {
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "create": "Create",
+    "update": "Update",
+    "rename": "Rename",
+    "remove": "Remove",
+    "add": "Add",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No",
+    "copy": "Copy",
+    "copied": "Copied",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "loading": "Loading",
+    "retry": "Retry",
+    "open": "Open",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "more": "More",
+    "less": "Less",
+    "select": "Select",
+    "clear": "Clear",
+    "refresh": "Refresh",
+    "send": "Send"
+  },
+  "status": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "pending": "Pending",
+    "running": "Running",
+    "completed": "Completed",
+    "failed": "Failed",
+    "stopped": "Stopped"
+  },
+  "errors": {
+    "generic": "Something went wrong",
+    "network": "Network error",
+    "unauthorized": "Unauthorized",
+    "notFound": "Not found",
+    "validation": "Validation failed"
+  },
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "persian": "فارسی"
+  },
+  "aria": {
+    "dismiss": "Dismiss",
+    "close": "Close",
+    "learnMore": "Learn more →",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "rowActions": "Row actions"
+  },
+  "image": {
+    "hide_templates": "Hide Templates",
+    "use_template": "Use Template",
+    "all_categories": "All",
+    "loading_templates": "Loading templates...",
+    "no_templates": "No templates found",
+    "no_templates_filter_title": "No template matches this filter",
+    "no_templates_filter_body": "Choose All, or pick one of the ready-made templates.",
+    "fill_variables": "Fill in Template Variables",
+    "cancel": "Cancel",
+    "apply_template": "Apply Template",
+    "template_applied": "Template applied!",
+    "fill_in": "Please fill in: {{fields}}",
+    "categories": {
+      "product_photography": "Product Photography",
+      "advertisement": "Advertisement",
+      "social_media": "Social Media",
+      "lifestyle": "Lifestyle",
+      "hero_banner": "Hero/Banner",
+      "tech_saas": "Tech/SaaS",
+      "food_restaurant": "Food/Restaurant",
+      "fashion_apparel": "Fashion/Apparel",
+      "infographic": "Infographic",
+      "software_promo": "Software promo",
+      "corporate": "Corporate",
+      "presentation": "Presentation"
+    },
+    "templates": {
+      "clean_white_background_product_shot": {
+        "title": "Clean White Background - Product Shot",
+        "body": "Clean product shot of {{product}} on pure white background (RGB 255,255,255), professional studio lighting, soft even illumination from 45-degree angle, subtle fill light, no harsh shadows, product fills 85% of frame, sharp focus, high resolution, clean minimalist aesthetic",
+        "description": "Professional e-commerce product photo with clean white background"
+      },
+      "premium_product_photography": {
+        "title": "Premium Product Photography",
+        "body": "High-end product photography of {{product}}, luxurious presentation, dramatic lighting with soft shadows, premium aesthetic, professional studio setup, detailed texture visible, elegant composition, commercial photography style, 4K quality",
+        "description": "Luxury product shot with premium feel"
+      },
+      "product_with_lifestyle_context": {
+        "title": "Product with Lifestyle Context",
+        "body": "Product photo of {{product}} in real-world setting, natural environment, authentic lifestyle context, warm natural lighting, professional composition, genuine atmosphere, aspirational yet relatable, high-quality photography",
+        "description": "Product shown in context of use"
+      },
+      "detailed_close_up_shot": {
+        "title": "Detailed Close-Up Shot",
+        "body": "Extreme close-up of {{product}}, macro photography, intricate details visible, texture emphasis, professional lighting to highlight features, shallow depth of field, high resolution, product detail showcase",
+        "description": "Macro shot highlighting product details"
+      },
+      "modern_advertisement": {
+        "title": "Modern Advertisement",
+        "body": "Professional advertisement photo of {{subject}}, modern aesthetic, vibrant colors, dramatic lighting, clean background, commercial photography style, high-end marketing campaign look, eye-catching composition, 4K quality",
+        "description": "Modern, eye-catching advertisement photo"
+      },
+      "luxury_brand_campaign": {
+        "title": "Luxury Brand Campaign",
+        "body": "Luxury advertisement for {{brand_product}}, premium aesthetic, sophisticated composition, elegant lighting, high-end fashion photography style, aspirational mood, refined color palette, professional commercial photography",
+        "description": "High-end luxury brand advertising"
+      },
+      "dynamic_action_shot": {
+        "title": "Dynamic Action Shot",
+        "body": "{{subject}} in dynamic action, energetic composition, motion blur effect, vibrant colors, dramatic lighting, professional sports photography style, high impact visual, advertising campaign quality",
+        "description": "Energetic action-focused advertisement"
+      },
+      "minimalist_brand_ad": {
+        "title": "Minimalist Brand Ad",
+        "body": "Minimalist advertisement featuring {{product}}, clean simple composition, negative space, modern design, subtle colors, professional minimalist photography, brand-focused aesthetic, contemporary style",
+        "description": "Clean, minimalist advertising approach"
+      },
+      "instagram_optimized_post": {
+        "title": "Instagram-Optimized Post",
+        "body": "Eye-catching Instagram post image for {{topic}}, 1:1 square composition, bold vibrant colors, engaging visual elements, modern design, professional yet approachable style, high engagement potential",
+        "description": "Square format optimized for Instagram"
+      },
+      "linkedin_professional": {
+        "title": "LinkedIn Professional",
+        "body": "Professional LinkedIn post image about {{topic}}, authoritative yet approachable, clean modern design, business-appropriate colors, professional photography style, corporate aesthetic, trustworthy feel",
+        "description": "Professional business-focused content"
+      },
+      "pinterest_style_vertical": {
+        "title": "Pinterest-Style Vertical",
+        "body": "Vertical Pinterest-optimized image for {{topic}}, 2:3 aspect ratio, inspiring composition, beautiful aesthetics, aspirational feel, high quality photography, pin-worthy design",
+        "description": "Tall format for Pinterest"
+      },
+      "story_reel_vertical": {
+        "title": "Story/Reel Vertical",
+        "body": "Vertical story image about {{topic}}, 9:16 format, mobile-optimized composition, bold text-friendly design, engaging visual, modern aesthetic, social media native feel",
+        "description": "Vertical format for Stories and Reels"
+      },
+      "authentic_lifestyle_moment": {
+        "title": "Authentic Lifestyle Moment",
+        "body": "Lifestyle photo showing {{subject}} in use, natural environment, authentic moment, warm natural lighting, genuine emotion, aspirational setting, professional photography, real-life context",
+        "description": "Natural, authentic lifestyle photography"
+      },
+      "home_interior_lifestyle": {
+        "title": "Home Interior Lifestyle",
+        "body": "{{subject}} in beautiful home interior, cozy atmosphere, natural window light, modern decor, lived-in feel, warm inviting ambiance, interior design photography style, aspirational yet attainable",
+        "description": "Home setting lifestyle shot"
+      },
+      "outdoor_lifestyle": {
+        "title": "Outdoor Lifestyle",
+        "body": "{{subject}} in outdoor natural setting, golden hour lighting, scenic background, candid moment, nature photography style, fresh outdoor atmosphere, authentic lifestyle",
+        "description": "Outdoor natural environment lifestyle"
+      },
+      "urban_lifestyle": {
+        "title": "Urban Lifestyle",
+        "body": "{{subject}} in modern urban environment, city background, contemporary lifestyle, natural street photography style, authentic urban moment, modern metropolitan feel",
+        "description": "Urban city lifestyle photography"
+      },
+      "cinematic_hero_banner": {
+        "title": "Cinematic Hero Banner",
+        "body": "Wide cinematic hero image for {{purpose}}, dramatic composition, professional lighting, high contrast, premium aesthetic, landscape orientation 16:9, ultra high quality, visually striking, banner-ready",
+        "description": "Dramatic wide banner image"
+      },
+      "website_hero_section": {
+        "title": "Website Hero Section",
+        "body": "Professional website hero image representing {{concept}}, modern web design aesthetic, clean composition, ample negative space for text overlay, professional photography, brand-friendly, high resolution 16:9",
+        "description": "Website header/hero section image"
+      },
+      "email_header_banner": {
+        "title": "Email Header Banner",
+        "body": "Email newsletter header image for {{topic}}, wide format, attention-grabbing, professional design, brand cohesive, clear focal point, marketing email optimized",
+        "description": "Email campaign header image"
+      },
+      "landing_page_hero": {
+        "title": "Landing Page Hero",
+        "body": "Conversion-focused landing page hero image for {{product_service}}, clear value proposition visual, professional photography, trust-building aesthetic, high quality, attention-grabbing",
+        "description": "Landing page conversion-focused hero"
+      },
+      "saas_dashboard_visualization": {
+        "title": "SaaS Dashboard Visualization",
+        "body": "Modern tech visualization representing {{concept}}, clean minimal design, gradient background in {{colors}}, 3D elements, futuristic aesthetic, professional B2B marketing style, digital innovation feel",
+        "description": "Tech/SaaS product visualization"
+      },
+      "abstract_tech_concept": {
+        "title": "Abstract Tech Concept",
+        "body": "Abstract digital illustration of {{technology_concept}}, geometric shapes, modern color palette, clean minimal style, technology-forward aesthetic, professional tech marketing",
+        "description": "Abstract technology concept illustration"
+      },
+      "cloud_network_visualization": {
+        "title": "Cloud/Network Visualization",
+        "body": "Professional visualization of {{cloud_concept}}, interconnected nodes, network diagram style, modern tech aesthetic, blue and white color scheme, enterprise software marketing style",
+        "description": "Cloud computing/network visualization"
+      },
+      "ai_data_visualization": {
+        "title": "AI/Data Visualization",
+        "body": "Futuristic AI and data visualization showing {{data_concept}}, neural network style, glowing elements, dark background, modern tech aesthetic, artificial intelligence theme",
+        "description": "AI and data-focused visualization"
+      },
+      "overhead_food_photography": {
+        "title": "Overhead Food Photography",
+        "body": "Appetizing food photography of {{dish}}, overhead flat-lay angle, natural daylight, fresh ingredients visible, garnished beautifully, restaurant-quality presentation, vibrant colors, professional food styling",
+        "description": "Top-down food photography"
+      },
+      "close_up_food_detail": {
+        "title": "Close-Up Food Detail",
+        "body": "Mouth-watering close-up of {{dish}}, detailed texture visible, steam rising, professional food photography, warm appetizing lighting, restaurant menu quality, culinary art presentation",
+        "description": "Detailed close-up food shot"
+      },
+      "restaurant_ambiance": {
+        "title": "Restaurant Ambiance",
+        "body": "{{dish}} served in elegant restaurant setting, ambient lighting, table setting visible, fine dining atmosphere, professional restaurant photography, upscale presentation, atmospheric mood",
+        "description": "Food with restaurant atmosphere"
+      },
+      "rustic_food_styling": {
+        "title": "Rustic Food Styling",
+        "body": "{{dish}} with rustic presentation, wooden table surface, natural ingredients around, warm natural lighting, artisanal feel, home-cooked aesthetic, food blog style photography",
+        "description": "Rustic, artisanal food presentation"
+      },
+      "fashion_product_shot": {
+        "title": "Fashion Product Shot",
+        "body": "Fashion product photo of {{item}}, professional model wearing {{item}}, studio lighting, clean background, high-fashion editorial style, detailed fabric texture visible, e-commerce ready",
+        "description": "Professional fashion product photography"
+      },
+      "editorial_fashion": {
+        "title": "Editorial Fashion",
+        "body": "High-fashion editorial photo featuring {{clothing_item}}, dramatic lighting, artistic composition, professional fashion photography, vogue-style aesthetic, striking pose, premium fashion magazine quality",
+        "description": "Editorial fashion magazine style"
+      },
+      "lifestyle_fashion": {
+        "title": "Lifestyle Fashion",
+        "body": "Lifestyle fashion photo of person wearing {{outfit}}, natural environment, candid moment, street style photography, authentic fashion, real-world context, modern casual aesthetic",
+        "description": "Casual lifestyle fashion photography"
+      },
+      "flat_lay_apparel": {
+        "title": "Flat Lay Apparel",
+        "body": "Flat lay fashion photo of {{clothing_items}}, overhead view, styled arrangement, clean background, professional product photography, e-commerce optimized, clothing details visible",
+        "description": "Overhead flat lay of clothing"
+      },
+      "data_visualization_infographic": {
+        "title": "Data Visualization Infographic",
+        "body": "Professional vertical infographic visualizing {{topic}}, clean flat design, bar and pie charts, statistic cards with bold numbers, modern line icons, {{colors}} color palette, generous whitespace, clear visual hierarchy, corporate aesthetic, text-safe layout, high resolution",
+        "description": "Data-driven infographic with charts, stat cards and clean flat icons"
+      },
+      "comparison_infographic": {
+        "title": "Comparison Infographic",
+        "body": "Comparison infographic contrasting {{option_a}} versus {{option_b}}, clean two-column layout, icons and key statistics, checkmarks and metrics, professional corporate style, balanced color blocks, easy-to-scan structured grid, high resolution",
+        "description": "Side-by-side two-column comparison with icons and metrics"
+      },
+      "process_steps_infographic": {
+        "title": "Process Steps Infographic",
+        "body": "Step-by-step process infographic explaining {{process}}, numbered horizontal flow with connecting arrows, minimal flat icon per step, {{colors}} accent palette, clean modern layout, professional business style, ample whitespace, presentation-ready",
+        "description": "Numbered step-by-step flow for how-to or onboarding processes"
+      },
+      "timeline_infographic": {
+        "title": "Timeline Infographic",
+        "body": "Company timeline infographic mapping {{topic}} from {{start}} to {{end}}, horizontal milestone markers, year labels, concise event icons, clean teal and slate aesthetic, professional corporate design, balanced spacing, presentation-ready, high resolution",
+        "description": "Horizontal milestone timeline for company history or roadmaps"
+      },
+      "saas_hero_banner": {
+        "title": "SaaS Hero Banner",
+        "body": "Wide website hero banner for a {{product_category}} SaaS product, soft blue-to-purple gradient background, floating abstract 3D shapes, subtle glassmorphism UI card accents, polished studio lighting, premium modern tech mood, clean text-safe negative space for headline and CTA, crisp edges, high-resolution marketing design, 16:9",
+        "description": "Wide landing-page hero with 3D shapes, glassmorphism and CTA space"
+      },
+      "feature_announcement": {
+        "title": "Feature Announcement",
+        "body": "Feature announcement graphic for {{feature}} in a software product, clean tech aesthetic, light gradient background, illustrative icon representing the feature, modern sans-serif headline space, professional B2B SaaS style, vibrant accent color, social-ready",
+        "description": "Announce a new software feature with a clean B2B tech look"
+      },
+      "app_dashboard_mockup": {
+        "title": "App Dashboard Mockup",
+        "body": "Sleek product mockup showcasing a {{app_type}} dashboard on a floating device frame, modern UI screens, soft shadows, gradient studio background in {{colors}}, glassmorphism panels, premium tech marketing style, high resolution",
+        "description": "Floating device frame showing your app or dashboard UI"
+      },
+      "product_launch_creative": {
+        "title": "Product Launch Creative",
+        "body": "Eye-catching product launch creative for {{product}}, bold introducing-style composition, dramatic lighting, dark navy background with bright accent glow, floating 3D geometric shapes, premium tech aesthetic, clear focal point, high-end campaign look, high resolution",
+        "description": "Dramatic introducing-style launch creative on dark navy with accent glow"
+      },
+      "linkedin_post": {
+        "title": "LinkedIn Post",
+        "body": "Professional LinkedIn post image about {{topic}}, authoritative yet approachable, clean modern corporate design, business-appropriate {{colors}} palette, subtle geometric accents, professional photography style, trustworthy feel, text-safe space, square 1:1",
+        "description": "Authoritative square graphic for LinkedIn thought-leadership posts"
+      },
+      "report_cover": {
+        "title": "Report Cover",
+        "body": "Corporate report cover design for {{title}}, elegant minimal layout, refined typography space, abstract data-inspired background graphics, professional navy and gold palette, premium business aesthetic, clean grid, A4 portrait, high resolution",
+        "description": "Elegant whitepaper or annual-report cover, A4 portrait"
+      },
+      "company_announcement": {
+        "title": "Company Announcement",
+        "body": "Corporate announcement banner for {{announcement}}, clean professional design, brand-forward layout, modern flat illustration, {{colors}} corporate palette, confident headline space, business-appropriate, polished, web-ready",
+        "description": "Polished banner for company news and announcements"
+      },
+      "webinar_banner": {
+        "title": "Webinar Banner",
+        "body": "Professional webinar banner for {{event_topic}}, modern corporate design, speaker-photo placeholder area, date and title text-safe zones, gradient background in {{colors}}, clean tech-business aesthetic, 16:9 presentation format, high resolution",
+        "description": "Webinar or conference banner with speaker-photo and title zones, 16:9"
+      },
+      "title_slide_background": {
+        "title": "Title Slide Background",
+        "body": "Clean presentation title slide background for {{topic}}, minimal professional design, abstract geometric accents in {{colors}}, generous text-safe negative space, modern corporate aesthetic, subtle gradient, 16:9 widescreen, high resolution",
+        "description": "Minimal 16:9 title-slide background with text-safe space"
+      },
+      "section_divider_slide": {
+        "title": "Section Divider Slide",
+        "body": "Presentation section divider slide for {{section}}, bold minimal layout, large headline space, single accent shape, {{colors}} palette, clean corporate style, balanced composition, 16:9 widescreen",
+        "description": "Bold 16:9 section-divider slide background"
+      },
+      "pitch_deck_background": {
+        "title": "Pitch Deck Background",
+        "body": "Modern pitch deck slide background for a {{industry}} startup, sleek minimal design, subtle abstract tech motifs, dark mode with neon accent in {{colors}}, ample text-safe area, premium investor-ready aesthetic, 16:9",
+        "description": "Sleek dark-mode pitch-deck background, investor-ready, 16:9"
+      }
+    },
+    "variables": {
+      "product": "Product",
+      "subject": "Subject",
+      "brand_product": "Brand Product",
+      "topic": "Topic",
+      "concept": "Concept",
+      "colors": "Colors",
+      "purpose": "Purpose",
+      "product_service": "Product Service",
+      "technology_concept": "Technology Concept",
+      "cloud_concept": "Cloud Concept",
+      "data_concept": "Data Concept",
+      "dish": "Dish",
+      "item": "Item",
+      "clothing_item": "Clothing Item",
+      "outfit": "Outfit",
+      "clothing_items": "Clothing Items",
+      "option_a": "First option",
+      "option_b": "Second option",
+      "process": "Process",
+      "start": "Start year",
+      "end": "End year",
+      "product_category": "Product category",
+      "feature": "Feature",
+      "app_type": "App type",
+      "title": "Title",
+      "announcement": "Announcement",
+      "event_topic": "Event topic",
+      "section": "Section",
+      "industry": "Industry"
+    }
+  },
+  "config": {
+    "create_title": "Create custom assistant",
+    "edit_title": "Edit custom assistant",
+    "section_identity": "Identity",
+    "section_behavior": "Behavior",
+    "section_sharing": "Sharing",
+    "name_label": "Name",
+    "name_placeholder": "My AI assistant",
+    "name_hint": "Shown in the model picker.",
+    "description_label": "Description",
+    "description_placeholder": "A helpful assistant for...",
+    "description_hint": "A one-line summary of what this assistant does.",
+    "visibility_label": "Who can use it",
+    "visibility_project": "Team",
+    "visibility_private": "Only me",
+    "visibility_private_hint": "Visible to you alone",
+    "visibility_public": "Everyone",
+    "visibility_public_hint": "Shared across the company",
+    "visibility_lock_hint": "Team pinning can only be set when creating a new assistant.",
+    "model_label": "AI model",
+    "model_hint": "The model that powers this assistant.",
+    "model_placeholder": "Choose a model...",
+    "loading_models": "Loading models...",
+    "system_prompt_label": "Instructions",
+    "system_prompt_placeholder": "Describe what this assistant should do, its tone, and what to avoid...",
+    "system_prompt_hint": "Tell the AI how to behave. Be specific — examples help.",
+    "enhance": "Enhance",
+    "enhancing": "Enhancing...",
+    "enhance_empty": "Enter a prompt to enhance",
+    "enhanced": "Prompt enhanced!",
+    "enhance_fail": "Failed to enhance prompt",
+    "revert": "Revert",
+    "reverted": "Reverted to your original",
+    "creativity_label": "Creativity",
+    "creativity_hint": "How varied and inventive the AI's answers can be.",
+    "creativity_low": "Focused",
+    "creativity_low_hint": "Tight, predictable answers",
+    "creativity_balanced": "Balanced",
+    "creativity_balanced_hint": "Good for most uses",
+    "creativity_high": "Creative",
+    "creativity_high_hint": "More varied, more surprising",
+    "cancel": "Cancel",
+    "save_changes": "Save Changes",
+    "create": "Create",
+    "saving": "Saving...",
+    "toast_created": "Custom assistant created",
+    "toast_updated": "Custom assistant updated",
+    "toast_fail": "Failed to save",
+    "toast_name_required": "Name is required",
+    "toast_model_required": "Please select a model",
+    "kind_label": "Assistant type",
+    "kind_hint": "Text assistants chat; image assistants generate images in the Studio.",
+    "kind_text": "Text",
+    "kind_image": "Image",
+    "badge_image": "Image",
+    "open_in_studio": "Open in Studio",
+    "image_model_label": "Image model",
+    "image_model_hint": "The model used to generate images.",
+    "instructions_label": "Style instructions",
+    "instructions_placeholder": "e.g. cinematic lighting, muted earth tones, shallow depth of field, 35mm film grain...",
+    "instructions_hint": "Added before every prompt as a style preamble — set the look, mood, and details to favor. Use ✨ Enhance to flesh it out.",
+    "base_images_label": "Base images",
+    "base_images_hint": "Up to {{max}} reference images. Added as context for every generation.",
+    "base_images_empty": "Optional reference images the model will use as visual context.",
+    "base_images_add": "Add",
+    "base_images_remove": "Remove image",
+    "base_images_max": "You can add up to {{max}} images.",
+    "base_images_upload_fail": "Failed to upload image"
+  },
+  "runtime": {
+    "branches": {
+      "switchedTo": "Switched to branch: {{name}}",
+      "switchFailed": "Failed to switch branch",
+      "saveFirst": "Please save the conversation first",
+      "waitForSave": "Please wait for message to be saved",
+      "created": "Created branch: {{name}}",
+      "createFailed": "Failed to create branch",
+      "deleted": "Branch deleted",
+      "deleteFailed": "Failed to delete branch",
+      "renamed": "Branch renamed",
+      "renameFailed": "Failed to rename branch",
+      "newConversationCreated": "New conversation created",
+      "newConversationFailed": "Failed to create new conversation"
+    },
+    "chat": {
+      "selectConfig": "Please select an AI configuration first",
+      "messageEdited": "Message edited and regenerated",
+      "editFailed": "Failed to edit message",
+      "regenerated": "Response regenerated",
+      "regenerateFailed": "Failed to regenerate",
+      "fileTooLarge": "File too large. Maximum size is 20MB.",
+      "unsupportedFileType": "Unsupported file type. Use images (JPEG, PNG, GIF, WebP) or PDF.",
+      "fileProcessFailed": "Failed to process file",
+      "streamFailed": "Failed to generate response",
+      "exportedAs": "Exported as {{kind}}",
+      "exportFailed": "Failed to export conversation",
+      "canvasNoCode": "No runnable code found in the response"
+    },
+    "workflow": {
+      "nodeDuplicated": "Node duplicated",
+      "nodeDeleted": "Node deleted",
+      "created": "New workflow created",
+      "enterName": "Please enter a workflow name",
+      "saved": "Workflow \"{{name}}\" saved",
+      "saveFailed": "Failed to save workflow",
+      "loaded": "Loaded \"{{name}}\"",
+      "loadFailed": "Failed to load workflow",
+      "templateLoaded": "Loaded template \"{{name}}\"",
+      "templateLoadFailed": "Failed to load template",
+      "noWorkflowSelected": "No workflow selected",
+      "deleted": "Workflow deleted",
+      "deleteFailed": "Failed to delete workflow",
+      "duplicated": "Workflow duplicated as \"{{name}}\"",
+      "duplicateFailed": "Failed to duplicate workflow",
+      "noNodesToExport": "No nodes to export",
+      "exported": "Workflow exported",
+      "imported": "Imported \"{{name}}\"",
+      "importFailed": "Failed to import workflow: Invalid JSON format",
+      "invalidFormat": "Invalid workflow format",
+      "saveBeforeExecute": "Please save workflow before executing",
+      "nodeExecuted": "Node executed successfully",
+      "executionCompleted": "Workflow completed successfully",
+      "executionFailed": "Workflow execution failed",
+      "generated": "Workflow generated! Review and save when ready."
+    },
+    "automate": {
+      "taskFailed": "Task failed",
+      "loadTaskFailed": "Failed to load task",
+      "deleteTaskFailed": "Failed to delete task",
+      "costWarning": "Task has sent 50+ messages — this may incur significant cost."
+    }
+  }
+}

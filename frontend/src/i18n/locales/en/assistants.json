@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Assistants",
+  "pageHint": "Ready-made assistants built for specific tasks. Pick one to get started.",
+  "meetingAssistant": {
+    "title": "Meeting Assistant",
+    "description": "Transcribe, summarize, and extract action items from meeting recordings.",
+    "cta": "Open"
+  },
+  "moreSoon": "More assistants coming soon",
+  "empty": {
+    "title": "No assistants available",
+    "description": "No ready-made assistants are enabled right now. You can still build your own below."
+  },
+  "customCrossLink": {
+    "title": "Looking to build your own?",
+    "description": "Create custom AI personas with their own model, instructions, and tone in Custom Assistants.",
+    "cta": "Custom Assistants"
+  }
+}

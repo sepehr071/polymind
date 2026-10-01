@@ -1,0 +1,81 @@
+{
+  "title": "Agent",
+  "subtitle": "Web research, images, data, documents — one agent that routes and asks when stuck.",
+  "new": "New agent task",
+  "search": "Search…",
+  "history": "History",
+  "placeholder": "Ask anything — search the web, generate images, analyze data, read files…",
+  "loadError": "Failed to load",
+  "deleteTitle": "Delete task?",
+  "deleteDesc": "This cannot be undone.",
+  "retry": "Retry",
+  "dismiss": "Dismiss",
+  "webBadge": "Web",
+  "webBadgeHint": "Web search & link reading always available",
+  "usedWeb": "Used web",
+  "streamDropped": "Connection dropped before the agent finished. Retry — image work may have been interrupted.",
+  "clarify": {
+    "title": "A few clarifications",
+    "placeholder": "Your answer…",
+    "submit": "Continue"
+  },
+  "empty": {
+    "title": "What should we do?",
+    "subtitle": "Search the live web, generate images, analyze spreadsheets, or read documents — the agent picks tools and asks if stuck.",
+    "capabilities": [
+      { "key": "web", "label": "Web search" },
+      { "key": "image", "label": "Images" },
+      { "key": "files", "label": "Documents" },
+      { "key": "data", "label": "Data / code" },
+      { "key": "clarify", "label": "Asks when stuck" }
+    ],
+    "starters": [
+      {
+        "title": "Search the web",
+        "prompt": "Search the latest news and reliable sources about renewable energy policy in 2026. Summarize key points with sources."
+      },
+      {
+        "title": "Generate an image",
+        "prompt": "Generate a clean product-hero illustration of a modern AI workspace, soft light, 16:9."
+      },
+      {
+        "title": "Summarize a URL",
+        "prompt": "Read this page and give me a short executive summary with bullet takeaways: "
+      },
+      {
+        "title": "Analyze a spreadsheet",
+        "prompt": "I'll upload a spreadsheet — profile the data, flag issues, and give 3 insights with charts if useful."
+      },
+      {
+        "title": "Multi-step plan",
+        "prompt": "Help me plan a product launch: outline steps, risks, and a one-page checklist."
+      },
+      {
+        "title": "Research + brief",
+        "prompt": "Research competitors for enterprise AI chat tools and draft a short comparison brief with sources."
+      }
+    ]
+  },
+  "phase": {
+    "thinking": "Thinking…",
+    "finishing": "Image ready — finishing reply…",
+    "searching": "Searching the web…",
+    "fetching": "Reading link…",
+    "generatingImage": "Generating image…",
+    "readingFile": "Reading file…",
+    "asking": "Asking you…",
+    "tool": "Working…",
+    "imageTool": "Image",
+    "askTool": "Question"
+  },
+  "tools": {
+    "webSearch": "Web search",
+    "webFetch": "Read link",
+    "image": "Image",
+    "code": "Code",
+    "ask": "Question",
+    "generic": "Tool",
+    "used_one": "Tools used ({{count}})",
+    "used_other": "Tools used ({{count}})"
+  }
+}

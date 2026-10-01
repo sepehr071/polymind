@@ -1,0 +1,63 @@
+{
+  "title": "Shop Assistant",
+  "subtitle": "Compare Digikala, Technolife and Fafait prices for office and IT purchases",
+  "need": "What do you need?",
+  "needPlaceholder": "e.g. HP 26A toner, 15\" laptop 16GB RAM, A4 paper ream",
+  "qty": "Quantity",
+  "maxBudget": "Max budget (Toman)",
+  "maxBudgetHint": "Optional total budget for the quantity",
+  "notes": "Specs / brand notes",
+  "notesPlaceholder": "Brand, model, warranty, color…",
+  "category": "Category",
+  "categoryOptions": {
+    "auto": "Auto",
+    "office": "Office supplies",
+    "it": "IT / electronics"
+  },
+  "lang": {
+    "fa": "فارسی",
+    "en": "English"
+  },
+  "run": "Find best prices",
+  "running": "Searching…",
+  "cancel": "Cancel",
+  "merchantsNote": "Search limited to Digikala, Technolife and Fafait.",
+  "activity": {
+    "working": "Working…",
+    "done": "Done",
+    "failed": "Failed",
+    "hint": "Planner → Digikala + Technolife + Fafait → compare",
+    "elapsed": "elapsed",
+    "log": "Steps"
+  },
+  "status": {
+    "planning": "Planning search queries",
+    "searching": "Searching Digikala, Technolife & Fafait",
+    "comparing": "Ranking by price",
+    "done": "Complete"
+  },
+  "winner": "Best pick",
+  "alternatives": "Alternatives",
+  "table": "All candidates",
+  "summary": "Summary",
+  "unitPrice": "Unit (Toman)",
+  "totalPrice": "Total (Toman)",
+  "merchant": "Store",
+  "openLink": "Open product",
+  "why": "Why",
+  "copyMd": "Copy report",
+  "downloadMd": "Download MD",
+  "downloadCsv": "Download CSV",
+  "copied": "Copied",
+  "disclaimer": "Disclaimer",
+  "noResults": "No products found on Digikala, Technolife or Fafait for this need.",
+  "liveHits": "Live hits",
+  "merchants": {
+    "digikala": "Digikala",
+    "technolife": "Technolife",
+    "fafait": "Fafait"
+  },
+  "errors": {
+    "generic": "Something went wrong. Try again."
+  }
+}

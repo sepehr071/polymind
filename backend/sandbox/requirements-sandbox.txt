@@ -1,0 +1,30 @@
+# Dependencies for the Data Analyzer sandbox venv (backend/sandbox/.venv-sandbox).
+#
+# This venv is DELIBERATELY SEPARATE from the backend's .venv-uv: only the
+# analyst data-science stack lives here, and runner.py is the ONLY code that
+# imports it. The backend process never imports pandas/numpy — it merely spawns
+# the sandbox python (under bwrap in prod) and reads JSON back.
+#
+# NO matplotlib/seaborn/plotly (charts are JSON via show_chart helpers in the UI).
+# Models that import matplotlib get ModuleNotFoundError — fix is prompt + retry
+# with show_chart, NOT installing matplotlib (PNG charts would not wire into FE).
+#
+# Provision (dev, Windows):
+#   cd backend/sandbox
+#   uv venv .venv-sandbox
+#   uv pip install --python .venv-sandbox/Scripts/python.exe -r requirements-sandbox.txt
+#
+# Provision (prod / Linux prod): see backend/sandbox/README.md.
+#
+# Core stack (must match SANDBOX_PYTHON_RULES in app/prompts/data_analyst.py):
+pandas>=2.2,<3.0
+numpy>=1.26,<3.0
+scipy>=1.11
+scikit-learn>=1.4
+statsmodels>=0.14
+python-dateutil>=2.9
+pyarrow>=15.0
+openpyxl>=3.1.5
+# Legacy binary .xls (Excel 97–2003). openpyxl only handles xlsx/xlsm.
+xlrd>=2.0.1
+duckdb>=1.1

@@ -1,0 +1,65 @@
+{
+  "page": {
+    "kicker": "Organization",
+    "title": "Series",
+    "subtitle": "Group recurring meetings, share a glossary, speaker names and email tone."
+  },
+  "empty": {
+    "title": "No series yet",
+    "hint": "Group related meetings into a series to share speakers and key terms.",
+    "selectPrompt": "Pick a series",
+    "selectPromptHint": "Click a series name to see its glossary, speaker names and tone settings.",
+    "noSuggestions": "No suggestions available",
+    "noSpeakers": "No speaker names yet. They are added automatically when you rename speakers in meetings of this series."
+  },
+  "form": {
+    "namePlaceholder": "Series name",
+    "newSeriesLabel": "New series",
+    "create": "Create",
+    "seriesCreated": "Series created",
+    "meetingCount_one": "{{count}} meeting",
+    "meetingCount_other": "{{count}} meetings",
+    "saved": "Saved",
+    "nameLabel": "Name",
+    "save": "Save",
+    "toneLabel": "Email tone",
+    "toneFormal": "Formal",
+    "toneCasual": "Casual",
+    "delete": "Delete",
+    "deleting": "Deleting…",
+    "deleteTitle": "Delete series «{{name}}»?",
+    "deleteDescription": "Member meetings will be detached from the series but not removed. The glossary and speaker names will be lost.",
+    "cancel": "Cancel",
+    "deleted": "Deleted"
+  },
+  "tabs": {
+    "glossary": "Glossary",
+    "suggested": "Suggestions",
+    "speakers": "Speaker names"
+  },
+  "keyterms": {
+    "manual": "Manual",
+    "accepted": "Accepted from suggestions",
+    "addPlaceholder": "Add a term (max 50 chars)",
+    "add": "Add",
+    "added": "Added",
+    "accept": "Accept",
+    "reject": "Reject",
+    "removeHint": "Click to remove",
+    "empty": "—"
+  },
+  "errors": {
+    "generic": "Something went wrong",
+    "loadSeries": "Could not load series",
+    "loadKeyterms": "Could not load key terms",
+    "loadSuggestions": "Could not load suggestions",
+    "loadSpeakers": "Could not load speaker names",
+    "create": "Could not create series",
+    "save": "Could not save changes",
+    "delete": "Could not delete series",
+    "addTerm": "Could not add term",
+    "accept": "Could not accept term",
+    "reject": "Could not remove term",
+    "retry": "Try again"
+  }
+}

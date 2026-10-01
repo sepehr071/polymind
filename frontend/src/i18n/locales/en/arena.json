@@ -1,0 +1,20 @@
+{
+  "title": "Compare models",
+  "subtitle": "Compare several models side by side",
+  "select_configs": "Select Configs",
+  "change_configs": "Change Configs",
+  "empty_title": "No configs selected",
+  "empty_hint": "Select 2-4 AI configs to start comparing",
+  "input_placeholder": "Send a message to all configs...",
+  "error_min_configs": "Minimum 2 configs required",
+  "selector": {
+    "title": "Select Configs",
+    "description": "Choose 2-{{max}} configs to compare ({{count}} selected)",
+    "loading": "Loading...",
+    "no_configs": "No configs available",
+    "quick_models": "Quick models",
+    "assistants": "Custom assistants",
+    "cancel": "Cancel",
+    "start": "Start comparison ({{count}})"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Image text reader (OCR)",
+  "subtitle": "Extract text or fields from images and PDFs",
+  "drop": {
+    "title": "Drop images or PDFs here",
+    "hint": "Up to {{count}} files · PNG, JPG, WEBP, GIF, PDF",
+    "uploading": "Uploading…",
+    "remove": "Remove file"
+  },
+  "prompt": {
+    "label": "What should we extract?",
+    "placeholder": "e.g. Invoice number, total, and line items — or leave empty for full text",
+    "hint": "Empty prompt = full transcription. Re-run anytime with a new prompt on the same files."
+  },
+  "actions": {
+    "extract": "Extract",
+    "extracting": "Extracting {{done}}/{{total}}…",
+    "working": "Working…",
+    "cancel": "Cancel",
+    "clearResults": "Clear results"
+  },
+  "result": {
+    "section": "Results",
+    "waiting": "Waiting…",
+    "failed": "Failed",
+    "copy": "Copy",
+    "download": "Download markdown",
+    "copied": "Copied"
+  },
+  "errors": {
+    "generic": "Something went wrong",
+    "maxFiles": "At most {{count}} files",
+    "badType": "Unsupported type: {{name}}",
+    "uploadFailed": "Upload failed: {{name}}",
+    "extractFailed": "Extraction failed",
+    "loadFailed": "Could not load that extract"
+  },
+  "history": {
+    "title": "History",
+    "new": "New extract",
+    "empty": "No extracts yet",
+    "untitled": "OCR",
+    "fileCount_one": "{{count}} file",
+    "fileCount_other": "{{count}} files",
+    "deleteTitle": "Delete extract",
+    "deleteConfirm": "Delete this extract from history?",
+    "deleteFromHistory": "Remove from history"
+  }
+}

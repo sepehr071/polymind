@@ -1,0 +1,108 @@
+{
+  "title": "ارائه‌ها",
+  "subtitle": "موضوع را به اسلایدِ قابل‌ویرایش تبدیل کنید",
+  "comingSoon": "به‌زودی",
+  "brief": {
+    "topic": "موضوع",
+    "topicPlaceholder": "موضوع خود را شرح دهید…",
+    "slideCount": "تعداد اسلایدها",
+    "tone": "لحن",
+    "audience": "مخاطب",
+    "language": "زبان",
+    "theme": "قالب",
+    "generateImages": "ساخت تصاویر",
+    "generateImagesHint": "بگذارید هوش مصنوعی اسلایدها را با تصاویر ساخته‌شده مصور کند.",
+    "sources": "فایل‌های منبع (اختیاری)",
+    "addSources": "افزودن فایل منبع",
+    "sourcesHint": "اسناد، صفحه‌گسترده یا PDF برای استناد رئوس مطالب.",
+    "uploading": "در حال بارگذاری…",
+    "uploadError": "برخی فایل‌ها بارگذاری نشدند. دوباره تلاش کنید.",
+    "removeSource": "حذف فایل",
+    "knowledge": "پایگاه دانش (اختیاری)",
+    "knowledgeHint": "موارد ذخیره‌شده را برای الهام‌بخشی به ارائه انتخاب کنید.",
+    "knowledgeError": "بارگذاری موارد ذخیره‌شده ممکن نشد.",
+    "untitledKnowledge": "بدون عنوان",
+    "generate": "ساخت رئوس مطالب"
+  },
+  "tones": {
+    "professional": "حرفه‌ای",
+    "friendly": "صمیمی",
+    "persuasive": "ترغیب‌کننده",
+    "academic": "علمی",
+    "playful": "شوخ‌طبعانه"
+  },
+  "audiences": {
+    "general": "عمومی",
+    "executives": "مدیران",
+    "students": "دانشجویان",
+    "engineers": "مهندسان",
+    "investors": "سرمایه‌گذاران"
+  },
+  "languages": {
+    "fa": "فارسی",
+    "en": "انگلیسی"
+  },
+  "themes": {
+    "polymind": "Polymind",
+    "dark": "تیره",
+    "minimal": "مینیمال",
+    "vibrant": "پرانرژی",
+    "board": "هیئت‌مدیره",
+    "pitch": "پیچ",
+    "marketing": "بازاریابی",
+    "mono": "تک‌رنگ"
+  },
+  "layout": {
+    "title": "عنوان",
+    "section": "بخش",
+    "agenda": "فهرست",
+    "content": "محتوا",
+    "content_image": "محتوا + تصویر",
+    "two_column": "دو ستونه",
+    "comparison": "مقایسه",
+    "metrics": "شاخص‌ها / KPI",
+    "process": "مراحل",
+    "timeline": "زمان‌بندی",
+    "quote": "نقل‌قول",
+    "feature_grid": "شبکه ویژگی",
+    "image_hero": "تصویر شاخص",
+    "chart": "نمودار",
+    "closing": "پایان"
+  },
+  "editor": {
+    "deckTitle": "عنوان ارائه",
+    "slideTitle": "عنوان اسلاید",
+    "layout": "چیدمان",
+    "bullets": "هر سطر یک نکته",
+    "bulletsPlaceholder": "هر سطر یک نکته…",
+    "addSlide": "افزودن اسلاید",
+    "moveUp": "انتقال به بالا",
+    "moveDown": "انتقال به پایین",
+    "deleteSlide": "حذف اسلاید",
+    "back": "بازگشت",
+    "render": "ساخت ارائه",
+    "hintMetrics": "{{count}} شاخص از هوش مصنوعی (در خروجی حفظ می‌شود)",
+    "hintStructured": "کارت‌های ساختاریافته از AI (در خروجی حفظ می‌شود)",
+    "hintChart": "داده نمودار از AI (در خروجی حفظ می‌شود)"
+  },
+  "phase": {
+    "outlining": "در حال ساخت رئوس حرفه‌ای…",
+    "researching": "در حال تحقیق موضوع و منابع…",
+    "planning": "در حال طراحی روایت و جهت بصری…",
+    "drafting": "در حال نوشتن اسلایدها…",
+    "designing": "در حال تخصیص چیدمان و دستور بصری…",
+    "reviewing": "بازبینی طراحی و پرداخت نهایی…",
+    "rendering": "در حال ساخت اسلایدها…",
+    "imagesSkipped_one": "{{count}} تصویر نادیده گرفته شد",
+    "imagesSkipped_other": "{{count}} تصویر نادیده گرفته شد"
+  },
+  "preview": {
+    "download": "دانلود pptx.",
+    "newDeck": "ارائه جدید",
+    "approxNote": "پیش‌نمایش ساختاری — ظاهر نهایی فایل pptx. است",
+    "chartNote": "نمودار ({{type}}، {{n}} دسته) — نسخه زنده در pptx."
+  },
+  "errors": {
+    "connectionLost": "ارتباط حین ساخت قطع شد (شبکه یا تایم‌اوت). دوباره تلاش کنید — رئوس چندمرحله‌ای ممکن است ۱ تا ۲ دقیقه طول بکشد."
+  }
+}
